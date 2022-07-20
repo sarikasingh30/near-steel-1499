@@ -15,10 +15,14 @@ const CasualSlippers = () => {
         dataaction();
     },[])
   return (
-    <div  style={{display:"grid", gridTemplateColumns:"3fr 8fr"}}>
+    <div>
       <div>
-
+            <h1 style={{fontWeight:"500",margin:"20px",color:"teal",fontSize:"25px",fontFamily:"sans-serif"}}>Casual Chapple/Slippers</h1>
+            <div>
+              {/* for page labeling part */}
+            </div>
       </div>
+    <div id='base'>      
       <div id='grid'>
           {
               data.map((item)=>(
@@ -26,62 +30,14 @@ const CasualSlippers = () => {
               ))
           }
       </div>
+      <div id='filter' style={{textAlign:"left",padding:"15px"}}>
+          <label style={{marginTop:"15px",fontWeight:"bold"}}>By Clouser</label><br />
+          <input type="checkbox" style={{}}  />
+      </div>
+    </div>
     </div>
   )
 }
 
 export default CasualSlippers
 
-
-{/* <Box key={item.id} maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-      <Image src={item.image1} alt={} />
-
-      <Box p='6'>
-        <Box display='flex' alignItems='baseline'>
-          <Badge borderRadius='full' px='2' colorScheme='teal'>
-            New
-          </Badge>
-          <Box
-            color='gray.500'
-            fontWeight='semibold'
-            letterSpacing='wide'
-            fontSize='xs'
-            textTransform='uppercase'
-            ml='2'
-          >
-            {property.beds} beds &bull; {property.baths} baths
-          </Box>
-        </Box>
-
-        <Box
-          mt='1'
-          fontWeight='semibold'
-          as='h4'
-          lineHeight='tight'
-          noOfLines={1}
-        >
-          {property.title}
-        </Box>
-
-        <Box>
-          {property.formattedPrice}
-          <Box as='span' color='gray.600' fontSize='sm'>
-            / wk
-          </Box>
-        </Box>
-
-        <Box display='flex' mt='2' alignItems='center'>
-          {Array(5)
-            .fill('')
-            .map((_, i) => (
-              <StarIcon
-                key={i}
-                color={i < property.rating ? 'teal.500' : 'gray.300'}
-              />
-            ))}
-          <Box as='span' ml='2' color='gray.600' fontSize='sm'>
-            {property.reviewCount} reviews
-          </Box>
-        </Box>
-      </Box>
-    </Box> */}

@@ -1,26 +1,45 @@
 import React, {useState} from 'react';
 import { Box } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
 import "./Contains.css";
+import Minibox from './Minibox';
 
 
 const Contains = ({data}) => {
     const [display,setDisplay] = useState("none");
     const [imgpref,setImgpref] = useState(data.image1);
-  return (
-    <Box key={data.id} className="modulebox" maxW='sm' h="300px" borderWidth='1px' borderRadius='lg' overflow='hidden' onMouseEnter={()=>setDisplay("grid")} onMouseLeave={()=>setDisplay("none")}>
-        <Image src={imgpref} style={{height:"50%",margin:"auto"}} />
-        <div style={{height:"20%",marginTop:"-10%",width:"90%",margin:"auto"}}>
-            <div style={{display:`${display}`,gridTemplateColumns:"1fr 1fr 1fr 1fr"}}>
-                <Box onClick={()=>setImgpref(data.image1)} minH="50px" style={{overflow:"hidden"}} maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'><Image style={{width:"90%",margin:"auto"}} src={data.image1}/></Box>
-                <Box onClick={()=>setImgpref(data.image2)} minH="50px" style={{overflow:"hidden"}} maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'><Image style={{width:"90%",margin:"auto"}} src={data.image2}/></Box>
-                <Box onClick={()=>setImgpref(data.image3)} minH="50px" style={{overflow:"hidden"}} maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'><Image style={{width:"90%",margin:"auto"}} src={data.image3}/></Box>
-                <Box onClick={()=>setImgpref(data.image4)} minH="50px" style={{overflow:"hidden"}} maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'><Image style={{width:"90%",margin:"auto"}} src={data.image4}/></Box>
-            </div>
+    const [cost,setCost] = useState(<b><h4>₹{data.cost}</h4></b>);
+    const [line,setLine] = useState("none");
+    const Display=(elem)=>{
+      setImgpref(elem);
+    }
+    const handleEnter=()=>{
+      setDisplay("grid");
+      setCost(<Button >SELECT OPTION</Button>)
+    }
+    const handleLeave=()=>{
+      setDisplay("none");
+      setCost(<b><h4>₹{data.cost}</h4></b>)
+    }
+    console.log(cost);
+      return (
+        <div>
+          <Box key={data.id} className="modulebox" minW="220px" maxW="330px" w='100%' margin="auto" boxShadow="0px 1px 10px lightblue" h="320px" borderWidth='1px' borderRadius='lg' overflow='hidden' onMouseEnter={()=>handleEnter()} onMouseLeave={()=>handleLeave()}>
+              <Image src={imgpref} style={{height:"50%",margin:"auto"}} />
+              <div style={{height:"20%",marginTop:"-10%",width:"90%",margin:"auto"}}>
+                  <div style={{display:`${display}`,gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:"5px"}}>
+                      <Minibox mini={data.image1} set={Display} />
+                      <Minibox mini={data.image2} set={Display} />
+                      <Minibox mini={data.image3} set={Display} />
+                      <Minibox mini={data.image4} set={Display} />
+                  </div>
+              </div>
+              <h4 onMouseEnter={()=>setLine("underline")} onMouseLeave={()=>setLine("none")} style={{padding:"0px 15px",textDecoration:line}}>{data.name1}</h4>
+              {cost}
+          </Box>
         </div>
-        <h4 style={{padding:"0px 15px"}}>{data.name1}</h4>
-    </Box>
-  )
+      ) 
 }
 
 export default Contains
