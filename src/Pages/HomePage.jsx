@@ -1,13 +1,17 @@
-import React from "react";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
+
+import React from 'react'
+import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
+import CasualSlippers from './Categories/CasualSlippers'
+
 
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
-        Home
-      <Footer />
+      Home
+      <Navbar/>
+      <CasualSlippers/>
+      <Footer/>
     </div>
   );
 };
