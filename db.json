@@ -1,0 +1,263 @@
+{
+    "Categories":[
+        {
+            "SlipperC":[
+                {
+                    "id":1,
+                    "name":"ADDA MEN'S CHAPPLE / SLIPPERS IN BLUE COLOUR",
+                    "name1":"ADDA MEN'S CHAPPLE / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0575_result.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0573_result.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0574_result.jpg",
+                    "cost":675,
+                    "slipon":false
+                },
+                {
+                    "id":2,
+                    "name":"ADDA MEN’S CHAPPLE / SLIPPERS IN COLOUR BLACK",
+                    "name1":"ADDA MEN’S CHAPPLE / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0831_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0832_result-100x100.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0833_result-100x100.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0834_result-100x100.jpg",
+                    "cost":675,
+                    "slipon":false
+                },
+                {
+                    "id":3,
+                    "name":"ADDA MEN’S CHAPPLE / SLIPPERS IN COLOUR NAVY/GREY",
+                    "name1":"ADDA MEN’S CHAPPLE / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0775_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0776_result-100x100.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0777_result-100x100.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0778_result-100x100.jpg",
+                    "cost":769,
+                    "slipon":false
+                },
+                {
+                    "id":4,
+                    "name":"ADDA MEN’S CHAPPLE / SLIPPERS IN COLOUR ORANG/NAVY",
+                    "name1":"ADDA MEN’S CHAPPLE / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0807_result.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0808_result.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0809_result.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0810_result.jpg",
+                    "cost":699,
+                    "slipon":false
+                },
+                {
+                    "id":5,
+                    "name":"FUEL MEN’S CASUAL CHAPPLE / SLIPPERS IN GREY/NAVY BLUE",
+                    "name1":"FUEL MEN’S CASUAL CHAPPLE / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0580_result.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0581_result.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0582_result.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0583_result.jpg",
+                    "cost":649,
+                    "slipon":false
+                },
+                {
+                    "id":6,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN BLACK",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11116.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11117-100x100.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11119-100x100.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11120-100x100.png",
+                    "cost":499,
+                    "slipon":true
+                },
+                {
+                    "id":7,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN BLACK",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11141.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11142.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11144.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11145.png",
+                    "cost":499,
+                    "slipon":true
+                },
+                {
+                    "id":8,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN BROWN",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11136.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11137.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11139.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11140.png",
+                    "cost":499,
+                    "slipon":true
+                },
+                {
+                    "id":9,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPERS in BROWN",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/12-11079-400x267.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/12-11080-400x267.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/12-11082-150x100.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/12-11083-150x100.png",
+                    "cost":419,
+                    "slipon":true
+                },
+                {
+                    "id":10,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPERS in TAN",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/8-11001.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/8-11002.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/8-11004.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/8-11005.png",
+                    "cost":899,
+                    "slipon":true
+                },
+                {
+                    "id":11,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPERS in TAN",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/7-11149-400x267.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/7-11150-400x267.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/7-11151-400x267.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/7-11152-400x267.png",
+                    "cost":899,
+                    "slipon":true
+                },
+                {
+                    "id":12,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES in BLACK",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11076-400x267.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11077-400x267.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11078-400x267.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11079-400x267.png",
+                    "cost":499,
+                    "slipon":true
+                },
+                {
+                    "id":13,
+                    "name":"RED CHIEF MEN’S CASUAL CHAPPAL / SLIPPERS IN BROWN",
+                    "name1":"RED CHIEF MEN’S CASUAL CHAPPAL / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/12/7-12551.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/12/7-12552.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/12/7-12553.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/12/7-12554.jpg",
+                    "cost":955,
+                    "slipon":true
+                },
+                {
+                    "id":14,
+                    "name":"RED CHIEF MEN’S CASUAL CHAPPAL / SLIPPERS IN TAN",
+                    "name1":"RED CHIEF MEN’S CASUAL CHAPPAL / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/12/7-12571-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/12/7-12570-150x99.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/12/7-12573-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/12/7-12572-150x99.jpg",
+                    "cost":995,
+                    "slipon":true
+                }
+            ],
+            "slipon":[
+                {
+                    "id":6,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN BLACK",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11116.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11117-100x100.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11119-100x100.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11120-100x100.png",
+                    "cost":499,
+                    "slipon":true
+                },
+                {
+                    "id":7,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN BLACK",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11141.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11142.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11144.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11145.png",
+                    "cost":499,
+                    "slipon":true
+                },
+                {
+                    "id":8,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN BROWN",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11136.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11137.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11139.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11140.png",
+                    "cost":499,
+                    "slipon":true
+                },
+                {
+                    "id":9,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPERS in BROWN",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/12-11079-400x267.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/12-11080-400x267.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/12-11082-150x100.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/12-11083-150x100.png",
+                    "cost":419,
+                    "slipon":true
+                },
+                {
+                    "id":10,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPERS in TAN",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/8-11001.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/8-11002.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/8-11004.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/8-11005.png",
+                    "cost":899,
+                    "slipon":true
+                },
+                {
+                    "id":11,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPERS in TAN",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/7-11149-400x267.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/7-11150-400x267.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/7-11151-400x267.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/7-11152-400x267.png",
+                    "cost":899,
+                    "slipon":true
+                },
+                {
+                    "id":12,
+                    "name":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES in BLACK",
+                    "name1":"C.SERIES MEN’S CASUAL CHAPPAL / SLIPPRES IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11076-400x267.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11077-400x267.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11078-400x267.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11079-400x267.png",
+                    "cost":499,
+                    "slipon":true
+                },
+                {
+                    "id":13,
+                    "name":"RED CHIEF MEN’S CASUAL CHAPPAL / SLIPPERS IN BROWN",
+                    "name1":"RED CHIEF MEN’S CASUAL CHAPPAL / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/12/7-12551.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/12/7-12552.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/12/7-12553.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/12/7-12554.jpg",
+                    "cost":955,
+                    "slipon":true
+                },
+                {
+                    "id":14,
+                    "name":"RED CHIEF MEN’S CASUAL CHAPPAL / SLIPPERS IN TAN",
+                    "name1":"RED CHIEF MEN’S CASUAL CHAPPAL / SLIPPERS IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/12/7-12571-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/12/7-12570-150x99.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/12/7-12573-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/12/7-12572-150x99.jpg",
+                    "cost":995,
+                    "slipon":true
+                }
+            ]
+        }
+    ]
+}
