@@ -1,7 +1,9 @@
+
 import React from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import CasualSlippers from './Categories/CasualSlippers'
+
 
 const HomePage = () => {
   return (
@@ -11,7 +13,7 @@ const HomePage = () => {
       <CasualSlippers/>
       <Footer/>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
