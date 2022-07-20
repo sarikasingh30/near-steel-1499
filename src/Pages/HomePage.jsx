@@ -5,8 +5,8 @@ import Navbar from "../Components/Navbar";
 const HomePage = () => {
   return (
     <div>
-      hi this is jai
       <Navbar />
+        Home
       <Footer />
     </div>
   );
