@@ -2,6 +2,7 @@ import {
   CHECK_REGISTER_USER_ERROR,
   CHECK_REGISTER_USER_REQUEST,
   CHECK_REGISTER_USER_SUCCESS,
+  LOGOUT_USER,
   REGISTER_USER_ERROR,
   REGISTER_USER_REQUEST,
   REGISTER_USER_SUCCESS,
@@ -26,4 +27,8 @@ export const checkUser = () => (dispatch) => {
     .catch((err) =>
       dispatch({ type: CHECK_REGISTER_USER_ERROR, payload: err })
     );
+};
+
+export const logout = () => (dispatch) => {
+  dispatch({ type: LOGOUT_USER });
 };
