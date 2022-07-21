@@ -35,17 +35,16 @@ color: "white",
 cursor: "pointer", */
 .iconsDiv {
     width:30%;
+    margin-right: 10px;
   display: flex;
   justify-content: flex-end;
 }
 .CartCount{
-    margin-top: 5%;
+    margin-top: 8%;
 }
 .CartCount>p{
-    font-size: 40px;
-    font-weight:700;
-    
-    padding: 2px;
+    font-size:25px;
+    padding: 5px;
 }
 .orig {
   background-image: radial-gradient(ellipse at center, #fff, #fff);
@@ -205,4 +204,5 @@ cursor: "pointer", */
 }
 .navbar {
   margin-bottom: 10px;
+  width:100%;
 }

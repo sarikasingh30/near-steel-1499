@@ -28,8 +28,7 @@ const CasualSandals = () => {
 
 
   return (
-    <div>
-      <Navbar />
+    <>
       <div>
         <h1
           style={{
@@ -83,8 +82,8 @@ const CasualSandals = () => {
           <input  type="checkbox"/> SLIP ON (9)
         </div>
       </div>
-      <Footer/>
-    </div>
+    
+    </>
   );
 };
 

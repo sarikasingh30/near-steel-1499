@@ -14,9 +14,11 @@ import "../App.css";
 
 const HomePage = () => {
   return (
-
-    <div className="App">
+    <div>
       <HomeTopSliding />
+      <Kitchen />
+      <Support />
+      <OtherHome />
     </div>
   );
 };

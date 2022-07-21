@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
 import {
   Box,
   Container,
@@ -17,8 +15,6 @@ import {
 import { ArrowRightIcon } from "@chakra-ui/icons";
 const BestSeller = () => {
   return (
-    <Box>
-      <Navbar />
       <Box>
         <Container maxW="6xl">
           <Flex direction="column">
@@ -188,8 +184,7 @@ const BestSeller = () => {
           </Box>
         </Container>
       </Box>
-      <Footer />
-    </Box>
+
   );
 };
 

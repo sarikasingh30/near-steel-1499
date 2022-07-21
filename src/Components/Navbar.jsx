@@ -5,6 +5,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import { FaCartPlus } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
+import { Link as RouterLink } from "react-router-dom";
 //import { VscTriangleDown } from "react-icons/vsc";
 
 
@@ -36,10 +37,10 @@ const Navbar = () => {
         </div>
         <div  className="iconsDiv">
           <div className="second">
-            <MdAccountCircle size="3rem" />
+            <MdAccountCircle size="35px" />
           </div>
           <div className="third">
-            <FaCartPlus size="3em" />
+            <FaCartPlus size="35px" />
           </div>
           <div className="CartCount">
             <p>(0)</p>
@@ -63,9 +64,9 @@ const Navbar = () => {
                         <div>
                           <p className="wear">Foot Wear</p>
                           <p className="wear">Men's footwear</p>
-                          <p className="wear1">Casual Chapple/Slippers</p>
-                          <p className="wear1">Casual Sandals</p>
-                          <p className="wear1">Casual/Party Shoes</p>
+                          <RouterLink to="/product-category/casual-slippers"><p className="wear1">Casual Chapple/Slippers</p></RouterLink>
+                          <RouterLink to="/product-category/casual-sandals"><p className="wear1">Casual Sandals</p></RouterLink>
+                          <RouterLink to="/product-category/casual-partyshoes"><p className="wear1">Casual/Party Shoes</p></RouterLink>
                           <p className="wear1">Chappal /Slippers</p>
                           <p className="wear1">Crocs</p>
                           <p className="wear1">Flip Flops</p>

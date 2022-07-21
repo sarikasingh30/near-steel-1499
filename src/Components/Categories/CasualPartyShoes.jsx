@@ -29,7 +29,6 @@ const CasualPartyShoes = () => {
 
   return (
     <div>
-      <Navbar />
       <div>
         <h1
           style={{
@@ -59,8 +58,7 @@ const CasualPartyShoes = () => {
           <ArrowRightIcon height="6px" />
           <span
             height="19px"
-            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
-          >
+            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}>
             Casual/Party Shoes
           </span>
         </Box>
@@ -83,7 +81,6 @@ const CasualPartyShoes = () => {
           <input  type="checkbox"/> SLIP ON (9)
         </div>
       </div>
-      <Footer/>
     </div>
   );
 };

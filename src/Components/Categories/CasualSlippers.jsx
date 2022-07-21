@@ -6,14 +6,13 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import { Link as RouterLink } from "react-router-dom";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
 const CasualSlippers = () => { 
 
   const dispatch = useDispatch();
   const data = useSelector(store=>store.AppReducer.products);
-
-
   const dataaction = () => {
     const request = dispatch(getDataRequest());
     axios
@@ -29,7 +28,6 @@ const CasualSlippers = () => {
 
   return (
     <div>
-      <Navbar />
       <div>
         <h1
           style={{
@@ -83,7 +81,6 @@ const CasualSlippers = () => {
           <input  type="checkbox"/> SLIP ON (9)
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
