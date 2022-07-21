@@ -32,7 +32,7 @@
   },
   "scripts": {
     "userserver": "json-server --watch user.json --port 5000",
-    "dbserver":"json-server --watch db.json --port 8080",
+    "dbserver": "json-server --watch db.json --port 8080",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
