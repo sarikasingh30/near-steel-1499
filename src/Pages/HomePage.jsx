@@ -1,17 +1,15 @@
-
-import React from "react";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
-import HomeTopSliding from "./HomeTopSliding";
-
-
+import React from 'react'
+import Categories from './Categories/Categories'
+import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
 
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
-      <HomeTopSliding />
-      <Footer />
+      Home
+      <Navbar/>
+      <Categories/>
+      <Footer/>
     </div>
   );
 };
