@@ -9,15 +9,24 @@ import Footer from "../Footer";
 const CasualSlippers = () => {
   const [data, setData] = useState([]);
   const [hover, sethover] = useState("grid");
+  const [slipon,setSlipon] = useState(false);
   const dataaction = () => {
     axios
       .get("http://localhost:8080/Categories")
-      .then((r) => setData(r.data[0].SlipperC))
+      .then((r) =>{
+        if(slipon===true){
+          setData(r.data[0].slipon)
+        }
+        else if(slipon===false){
+          setData(r.data[0].SlipperC)
+        }
+        
+      })
       .catch((e) => console.log(e));
   };
   useEffect(() => {
     dataaction();
-  }, []);
+  }, [slipon]);
   return (
     <div>
       <Navbar />
@@ -67,7 +76,11 @@ const CasualSlippers = () => {
             By Clouser
           </label>
           <br />
-          <input type="checkbox" style={{}} />
+          <input onClick={()=>{
+            setSlipon(!slipon);
+            // dataaction();
+            // console.log(slipon)
+          }} type="checkbox"/> SLIP ON (9)
         </div>
       </div>
       <Footer/>

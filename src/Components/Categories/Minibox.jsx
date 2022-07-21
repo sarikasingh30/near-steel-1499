@@ -10,7 +10,16 @@ const Minibox = ({mini,set}) => {
     }
   return (
     <div>
-        <Box onClick={()=>{handleset(mini)}} onMouseEnter={()=>setbord("1px solid blue")} onMouseLeave={()=>setbord("1px solid white")} minH="50px" style={{overflow:"hidden",border:`${bord}`,borderRadius:"0px"}} maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'><Image style={{width:"100%",margin:"auto"}} src={mini}/></Box>
+        <Box 
+          onClick={()=>{handleset(mini)}} 
+          onMouseEnter={()=>setbord("1px solid blue")} 
+          onMouseLeave={()=>setbord("1px solid white")} 
+          minH="50px" 
+          style={{overflow:"hidden",border:`${bord}`,borderRadius:"0px"}} 
+          maxW='sm' borderWidth='1px' borderRadius='lg' 
+          overflow='hidden'>
+            <Image style={{width:"100%",margin:"auto"}} src={mini}/>
+        </Box>
     </div>
   )
 }
