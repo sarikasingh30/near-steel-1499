@@ -22,7 +22,7 @@ const Contains = ({data}) => {
       setDisplay("none");
       setCost(<b><h4>₹{data.cost}</h4></b>)
     }
-    console.log(cost);
+    // console.log(cost);
       return (
         <div>
           <Box key={data.id} className="modulebox" minW="220px" maxW="330px" w='100%' margin="auto" boxShadow="0px 1px 10px lightblue" h="320px" borderWidth='1px' borderRadius='lg' overflow='hidden' onMouseEnter={()=>handleEnter()} onMouseLeave={()=>handleLeave()}>
