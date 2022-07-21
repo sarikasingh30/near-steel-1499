@@ -1,0 +1,23 @@
+#grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+@media all and (max-width:1115px){
+    #grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media all and (max-width:800px){
+    #grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media all and (max-width:420px){
+    #grid{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+}
