@@ -1,12 +1,16 @@
+
 import React from "react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
+import HomeTopSliding from "./HomeTopSliding";
+
+
 
 const HomePage = () => {
   return (
     <div>
-      hi this is jai
       <Navbar />
+      <HomeTopSliding />
       <Footer />
     </div>
   );
