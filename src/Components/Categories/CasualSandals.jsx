@@ -6,9 +6,8 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+const CasualSandals = () => { 
 
-import { Link as RouterLink } from "react-router-dom";
-const CasualSlippers = () => { 
   const [data, setData] = useState([]);
   const [slipon,setSlipon] = useState(false);
 
@@ -46,7 +45,7 @@ const CasualSlippers = () => {
       axios
         .get("http://localhost:8080/Categories")
         .then((r) =>{
-            setData(r.data[0].SlipperC)
+            setData(r.data[0].casualSandals)
         })
         .catch((e) => console.log(e));
     }
@@ -56,7 +55,7 @@ const CasualSlippers = () => {
     axios
       .get("http://localhost:8080/Categories")
       .then((r) =>{
-          setData(r.data[0].SlipperC)
+          setData(r.data[0].casualSandals)
       })
       .catch((e) => console.log(e));
   };
@@ -68,6 +67,7 @@ const CasualSlippers = () => {
 
   return (
     <div>
+      <Navbar />
       <div>
         <h1
           style={{
@@ -78,7 +78,7 @@ const CasualSlippers = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Casual Chapple/Slippers
+          Casual Sandals
         </h1>
         <Box mb="6">
           <span
@@ -106,7 +106,7 @@ const CasualSlippers = () => {
       <div id="base">
         <div id="grid">
           {data.map((item) => (
-            <RouterLink to={`/casual-slippers/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
+            <Contains key={item.id} data={item} />
           ))}
         </div>
         <div id="filter" style={{ textAlign: "left", padding: "15px" }}>
@@ -114,11 +114,12 @@ const CasualSlippers = () => {
             By Clouser
           </label>
           <br />
-          <input onClick={()=>handleSlipon()} type="checkbox"/> SLIP ON (9)
+          <input onClick={()=>handleSlipon()} type="checkbox"/> SLIP ON (2)
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
 
-export default CasualSlippers;
+export default CasualSandals;
