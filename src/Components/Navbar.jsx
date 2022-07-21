@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-=======
 import React from "react";
 import "./Navbar.css";
 
@@ -9,7 +6,7 @@ import { FaCartPlus } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
 //import { VscTriangleDown } from "react-icons/vsc";
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
+
 
 const Navbar = () => {
   return (

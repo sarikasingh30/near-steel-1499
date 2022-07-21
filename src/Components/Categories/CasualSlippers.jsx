@@ -70,7 +70,7 @@ const CasualSlippers = () => {
           <input type="checkbox" style={{}} />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
