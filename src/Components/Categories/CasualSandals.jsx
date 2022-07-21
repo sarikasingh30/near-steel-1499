@@ -6,58 +6,20 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
+import { useSelector,useDispatch } from "react-redux";
 const CasualSandals = () => { 
 
-  const [data, setData] = useState([]);
-  const [slipon,setSlipon] = useState(false);
+  const dispatch = useDispatch();
+  const data = useSelector(store=>store.AppReducer.products);
 
-  const handleSlipon=()=>{
-    const newdata=[];
-    setSlipon(!slipon);
-    // {
-    //   data.map((item)=>{
-    //     setSlipon(!slipon)
-    //     if(slipon===false){
-    //       if(item.slipon===true){
-    //         newdata.push(item);
-    //         setData(newdata);
-    //       }
-    //     }
-    //     if(slipon === true){
-    //       axios
-    //         .get("http://localhost:8080/Categories")
-    //         .then((r) =>{
-    //             setData(r.data[0].SlipperC)
-    //         })
-    //         .catch((e) => console.log(e));
-    //     }
-    //   })
-    // }
-    if(slipon === false){
-      data.map((item)=>{
-        if(item.slipon === true){
-          newdata.push(item);
-          setData(newdata);
-        }
-      })
-    }
-    if(slipon === true){
-      axios
-        .get("http://localhost:8080/Categories")
-        .then((r) =>{
-            setData(r.data[0].casualSandals)
-        })
-        .catch((e) => console.log(e));
-    }
-  }
 
   const dataaction = () => {
+    const request = dispatch(getDataRequest());
     axios
-      .get("http://localhost:8080/Categories")
-      .then((r) =>{
-          setData(r.data[0].casualSandals)
-      })
-      .catch((e) => console.log(e));
+    .get('http://localhost:8080/Categories')
+    .then(r=>dispatch(getDataSuccess(r.data)))
+    .catch(e=>dispatch(getDataFailure()));
   };
 
   useEffect(() => {
@@ -99,22 +61,26 @@ const CasualSandals = () => {
             height="19px"
             style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
           >
-            Casual Chapple/Slippers
+            Casual Sandals
           </span>
         </Box>
       </div>
       <div id="base">
         <div id="grid">
-          {data.map((item) => (
-            <Contains key={item.id} data={item} />
-          ))}
+          {data.map((item) =>{
+            if(item.type === "casualSandal"){
+              return(
+                <Contains key={item.id} data={item} />
+              )
+            } 
+            })}
         </div>
         <div id="filter" style={{ textAlign: "left", padding: "15px" }}>
           <label style={{ marginTop: "15px", fontWeight: "bold" }}>
             By Clouser
           </label>
           <br />
-          <input onClick={()=>handleSlipon()} type="checkbox"/> SLIP ON (2)
+          <input  type="checkbox"/> SLIP ON (9)
         </div>
       </div>
       <Footer/>
