@@ -62,130 +62,136 @@ const Login = () => {
 
     // console.log(currentUser.token);
     saveLocalData("token", currentUser.token);
-    navigate("/");
+    navigate("/myaccount");
   };
   return (
-    <Box p="1rem 0 0 0">
-      <Container p="0.5rem" color="#1e516c">
-        <Heading
-          fontSize="2xl"
-          mb="0.4rem"
-          letterSpacing="2px"
-          fontWeight={500}
-        >
-          My account
-        </Heading>
-        <Flex justify="center" align="end" fontSize="sm" gap={1}>
-          <RouterLink to="/">
-            <Text _hover={{ textDecoration: "underline" }}>Home</Text>
-          </RouterLink>
-          <RiArrowDropRightLine />
-          <Text>My account</Text>
-        </Flex>
-      </Container>
-
-      {/* login register box  */}
-      <Flex
-        gap={10}
-        justify="center"
-        p={{
-          base: "1rem 1rem",
-          sm: "1rem 5rem",
-          md: "1rem 3rem",
-          lg: "1rem 5rem",
-          xl: "1rem 10rem",
-        }}
-        direction={{
-          base: "column",
-          sm: "column",
-          md: "row",
-          lg: "row",
-          xl: "row",
-        }}
-      >
-        {/* login  */}
-        <Box w="100%" borderBottomRadius="10px">
-          <Heading fontSize="2xl" fontWeight={600} mb="2rem">
-            Login
+      <Box p="1rem 0 0 0">
+        <Container p="0.5rem" color="#1e516c">
+          <Heading
+            fontSize="2xl"
+            mb="0.4rem"
+            letterSpacing="2px"
+            fontWeight={500}
+          >
+            My account
           </Heading>
-          <Box bg="#fafafa" p="1rem 2rem" shadow="md" borderBottomRadius="10px">
-            <Text textAlign="start">Connect with</Text>
-            <Flex
-              border="1px solid #4f71e8"
-              maxW="max-content"
-              align="center"
-              p="0 0 0 0.4rem"
-              borderRadius={5}
-              m="0.2rem 0 4rem 0.3rem"
-              cursor="pointer"
-              transition="500ms"
-              _hover={{ transform: "scale(1.1)" }}
-            >
-              <FcGoogle fontSize="25px" />
-              <Text
-                p="0 1.5rem"
-                fontSize="sm"
-                ml="0.3rem"
-                lineHeight={2.1}
-                bg="#4f71e8"
-                color="white"
-                border="1px solid #4f71e8"
-                borderRightRadius={5}
-              >
-                Login with Google
-              </Text>
-            </Flex>
-            <FormControl isRequired>
-              <FormLabel fontWeight={400}>Username or email address</FormLabel>
-              <Input
-                id="loginEmail"
-                isInvalid={valid.email}
-                size="lg"
-                type="email"
-                value={loginEamil}
-                onChange={(e) => {
-                  setLoginEmail(e.target.value);
-                  setValid({ email: false });
-                }}
-              />
-              <FormLabel fontWeight={400} mt="1.5rem">
-                Password
-              </FormLabel>
-              <Input
-                isInvalid={valid.password}
-                size="lg"
-                type="password"
-                value={loginPassword}
-                onChange={(e) => {
-                  setLoginPassword(e.target.value);
-                  setValid({ password: false });
-                }}
-              />
-            </FormControl>
-            <Flex
-              direction={{ base: "column", xl: "row" }}
-              mt="1.5rem"
-              align="start"
-              gap={10}
-            >
-              <Checkbox mt="0">Remember me</Checkbox>
-              <Button
-                bg="#ffce61"
-                border="1px solid"
-                p="1.5rem"
-                mt="0.5rem"
-                borderRadius={4}
-                onClick={handelLogin}
-              >
-                LOG IN
-              </Button>
-            </Flex>
-            <Text mt="1rem" textAlign="right">
-              Lost your password?
-            </Text>
-          </Box>
-        </Box>
+          <Flex justify="center" align="end" fontSize="sm" gap={1}>
+            <RouterLink to="/">
+              <Text _hover={{ textDecoration: "underline" }}>Home</Text>
+            </RouterLink>
+            <RiArrowDropRightLine />
+            <Text>My account</Text>
+          </Flex>
+        </Container>
 
+        {/* login register box  */}
+        <Flex
+          gap={10}
+          justify="center"
+          p={{
+            base: "1rem 1rem",
+            sm: "1rem 5rem",
+            md: "1rem 3rem",
+            lg: "1rem 5rem",
+            xl: "1rem 10rem",
+          }}
+          direction={{
+            base: "column",
+            sm: "column",
+            md: "row",
+            lg: "row",
+            xl: "row",
+          }}
+        >
+          {/* login  */}
+          <Box w="100%" borderBottomRadius="10px">
+            <Heading fontSize="2xl" fontWeight={600} mb="2rem">
+              Login
+            </Heading>
+            <Box
+              bg="#fafafa"
+              p="1rem 2rem"
+              shadow="md"
+              borderBottomRadius="10px"
+            >
+              <Text textAlign="start">Connect with</Text>
+              <Flex
+                border="1px solid #4f71e8"
+                maxW="max-content"
+                align="center"
+                p="0 0 0 0.4rem"
+                borderRadius={5}
+                m="0.2rem 0 4rem 0.3rem"
+                cursor="pointer"
+                transition="500ms"
+                _hover={{ transform: "scale(1.1)" }}
+              >
+                <FcGoogle fontSize="25px" />
+                <Text
+                  p="0 1.5rem"
+                  fontSize="sm"
+                  ml="0.3rem"
+                  lineHeight={2.1}
+                  bg="#4f71e8"
+                  color="white"
+                  border="1px solid #4f71e8"
+                  borderRightRadius={5}
+                >
+                  Login with Google
+                </Text>
+              </Flex>
+              <FormControl isRequired>
+                <FormLabel fontWeight={400}>
+                  Username or email address
+                </FormLabel>
+                <Input
+                  id="loginEmail"
+                  isInvalid={valid.email}
+                  size="lg"
+                  type="email"
+                  value={loginEamil}
+                  onChange={(e) => {
+                    setLoginEmail(e.target.value);
+                    setValid({ email: false });
+                  }}
+                />
+                <FormLabel fontWeight={400} mt="1.5rem">
+                  Password
+                </FormLabel>
+                <Input
+                  isInvalid={valid.password}
+                  size="lg"
+                  type="password"
+                  value={loginPassword}
+                  onChange={(e) => {
+                    setLoginPassword(e.target.value);
+                    setValid({ password: false });
+                  }}
+                />
+              </FormControl>
+              <Flex
+                direction={{ base: "column", xl: "row" }}
+                mt="1.5rem"
+                align="start"
+                gap={10}
+              >
+                <Checkbox mt="0">Remember me</Checkbox>
+                <Button
+                  bg="#ffce61"
+                  border="1px solid"
+                  p="1.5rem"
+                  mt="0.5rem"
+                  borderRadius={4}
+                  onClick={handelLogin}
+                >
+                  LOG IN
+                </Button>
+              </Flex>
+              <Text mt="1rem" textAlign="right">
+                Lost your password?
+              </Text>
+            </Box>
+          </Box>
         {/* register  */}
         <Register users={users} />
       </Flex>
