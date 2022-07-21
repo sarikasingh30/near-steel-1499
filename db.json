@@ -257,6 +257,48 @@
                     "cost":995,
                     "slipon":true
                 }
+            ],
+            "casualSandals":[
+                {
+                    "id":1,
+                    "name":"P&G MEN’S SANDALS in BROWN",
+                    "name1":"P&G MEN’S SANDALS in BROWN",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/12/16-11057-400x267.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/12/16-11058-400x267.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/12/16-11059-400x267.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/12/16-11060-400x267.jpg",
+                    "cost":1599
+                },
+                {
+                    "id":2,
+                    "name":"P&G MEN’S SANDALS in TAN",
+                    "name1":"P&G MEN’S SANDALS in TAN",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/12/16-11062-400x267.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/12/16-11063-400x267.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/12/16-11064-400x267.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/12/16-11065-400x267.jpg",
+                    "cost":1099
+                },
+                {
+                    "id":3,
+                    "name":"S.SERIES MEN’S CASUAL SANDALS in MAROON",
+                    "name1":"S.SERIES MEN’S CASUAL SANDALS in MAROON",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/21-1060-400x267.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/21-1061-400x267.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/21-1062-400x267.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/21-1063-400x267.jpg",
+                    "cost":399
+                },
+                {
+                    "id":4,
+                    "name":"BANISH MEN’S SANDAL in BROWN",
+                    "name1":"BANISH MEN’S SANDAL in BROWN",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/banish_bn57_DSC_0099-400x300.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/banish_bn57_DSC_0097-400x300.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/banish_bn57_DSC_0098-400x300.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/banish_bn57_DSC_0100-400x300.jpg",
+                    "cost":2895
+                }
             ]
         }
     ]
