@@ -65,8 +65,6 @@ const Login = () => {
     navigate("/");
   };
   return (
-    <Box>
-      <Navbar/>
     <Box p="1rem 0 0 0">
       <Container p="0.5rem" color="#1e516c">
         <Heading
@@ -192,8 +190,7 @@ const Login = () => {
         <Register users={users} />
       </Flex>
     </Box>
-    <Footer/>
-    </Box>
+
   );
 };
 

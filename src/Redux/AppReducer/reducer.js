@@ -1,6 +1,7 @@
 // import * as types from "./actionTypes"
 const initialState={
     // .............add key-value pair
+    
     isLoading:false,
     isError:false
 }

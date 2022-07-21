@@ -10,10 +10,8 @@ import HomeTopSliding from "./HomeTopSliding";
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
-      {/* <HomeTopSliding /> */}
-      <CasualSlippers/>
-      <Footer />
+      <HomeTopSliding />
+      {/* <CasualSlippers/> */}
     </div>
   );
 };

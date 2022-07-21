@@ -36,10 +36,10 @@ const Navbar = () => {
         </div>
         <div  className="iconsDiv">
           <div className="second">
-            <MdAccountCircle size="3rem" />
+            <MdAccountCircle size="35px" />
           </div>
           <div className="third">
-            <FaCartPlus size="3em" />
+            <FaCartPlus size="35px" />
           </div>
           <div className="CartCount">
             <p>(0)</p>

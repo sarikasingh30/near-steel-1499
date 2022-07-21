@@ -6,6 +6,7 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import { Link as RouterLink } from "react-router-dom";
 const CasualSlippers = () => {
   const [data, setData] = useState([]);
   const [hover, sethover] = useState("grid");
@@ -29,7 +30,6 @@ const CasualSlippers = () => {
   }, [slipon]);
   return (
     <div>
-      <Navbar />
       <div>
         <h1
           style={{
@@ -68,7 +68,7 @@ const CasualSlippers = () => {
       <div id="base">
         <div id="grid">
           {data.map((item) => (
-            <Contains key={item.id} data={item} />
+            <RouterLink to={`/casual-slippers/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
           ))}
         </div>
         <div id="filter" style={{ textAlign: "left", padding: "15px" }}>
@@ -83,7 +83,6 @@ const CasualSlippers = () => {
           }} type="checkbox"/> SLIP ON (9)
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
