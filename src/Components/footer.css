@@ -51,7 +51,7 @@
     height:400px;
     width:100%;
     background-color: black;
-    border :1px solid red;
+    border :1px solid black;
 }
 .footerimg{
     margin-left:40%;
@@ -86,15 +86,15 @@
     margin-left:6px;
 }
 .icons{
-    height: 46.8px;
-    width: 46.8px;
+    height:50px;
+    width: 50px;
     border-radius: 50%;
     background-color:#ffce61;
     margin-left: 400px;
 }
 .icons1{
-    height: 46.8px;
-    width: 46.8px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color:#ffce61;
     margin-left:20px;

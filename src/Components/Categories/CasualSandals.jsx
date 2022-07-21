@@ -66,8 +66,7 @@ const CasualSandals = () => {
 
 
   return (
-    <div>
-      <Navbar />
+    <>
       <div>
         <h1
           style={{
@@ -117,8 +116,8 @@ const CasualSandals = () => {
           <input onClick={()=>handleSlipon()} type="checkbox"/> SLIP ON (2)
         </div>
       </div>
-      <Footer/>
-    </div>
+    
+    </>
   );
 };
 

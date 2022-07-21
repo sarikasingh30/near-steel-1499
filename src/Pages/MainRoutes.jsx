@@ -1,5 +1,7 @@
 import React from "react";
 import {Routes,Route} from "react-router-dom"
+import CasualPartyShoes from "../Components/Categories/CasualPartyShoes";
+import CasualSandals from "../Components/Categories/CasualSandals";
 import CasualSlippers from '../Components/Categories/CasualSlippers'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
@@ -17,7 +19,9 @@ const MainRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/bestseller" element={<BestSeller/>}/>
         <Route path="/product-category/casual-slippers" element={<CasualSlippers/>}/>
-        <Route path="/casual-slippers/:id" element={<SingleProduct/>}/>
+        <Route path="/product-category/casual-sandals" element={<CasualSandals/>}/>
+        <Route path="/product-category/casual-partyshoes" element={<CasualPartyShoes/>}/>
+        {/* <Route path="/casual-slippers/:id" element={<SingleProduct/>}/> */}
     </Routes>
     <Footer/>
     </>
