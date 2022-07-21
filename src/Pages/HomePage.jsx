@@ -1,4 +1,6 @@
 import React from "react";
+import CasualPartyShoes from "../Components/Categories/CasualPartyShoes";
+import CasualSandals from "../Components/Categories/CasualSandals";
 import CasualSlippers from "../Components/Categories/CasualSlippers";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
@@ -12,6 +14,11 @@ const HomePage = () => {
   return (
     <div className="App">
       <HomeTopSliding />
+      //create routes for these
+      <CasualSlippers/>
+      <CasualSandals/>
+      <CasualPartyShoes/>
+      //....................
       <Kitchen />
       <Support />
       <OtherHome />
