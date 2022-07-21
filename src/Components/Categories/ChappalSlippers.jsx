@@ -8,7 +8,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
-const CasualSandals = () => { 
+const ChappalSlippers = () => { 
 
   const dispatch = useDispatch();
   const data = useSelector(store=>store.AppReducer.products);
@@ -28,7 +28,8 @@ const CasualSandals = () => {
 
 
   return (
-    <>
+    <div>
+      <Navbar />
       <div>
         <h1
           style={{
@@ -39,7 +40,7 @@ const CasualSandals = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Casual Sandals
+          Casual Chapple/Slippers
         </h1>
         <Box mb="6">
           <span
@@ -60,14 +61,14 @@ const CasualSandals = () => {
             height="19px"
             style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
           >
-            Casual Sandals
+            Casual Chapple/Slippers
           </span>
         </Box>
       </div>
       <div id="base">
         <div id="grid">
           {data.map((item) =>{
-            if(item.type === "casualSandal"){
+            if(item.type === "casualSlipper" || item.type === "chappal"){
               return(
                 <Contains key={item.id} data={item} />
               )
@@ -82,9 +83,9 @@ const CasualSandals = () => {
           <input  type="checkbox"/> SLIP ON (9)
         </div>
       </div>
-    
-    </>
+      <Footer/>
+    </div>
   );
 };
 
-export default CasualSandals;
+export default ChappalSlippers;

@@ -1,7 +1,29 @@
 {
     "Categories":[
-        {
-            "SlipperC":[
+                {
+                    "id":-1,
+                    "name":"ADDA MEN’S CASUAL CHAPPLE SLIPPER IN TAN COLOUR",
+                    "name1":"ADDA MEN’S CASUAL CHAPPLE SLIPPER IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0568_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0570_result-400x265.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0571_result-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0569_result-400x265.jpg",
+                    "cost":675,
+                    "count":1,
+                    "type":"chappal"
+                },
+                {
+                    "id":0,
+                    "name":"SPARX MEN’S CASUAL CHAPPLE SLIPPER IN BROWN COLOUR",
+                    "name1":"SPARX MEN’S CASUAL CHAPPLE SLIPPER IN...",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0010_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0011_result-400x265.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0012_result-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0013_result-400x265.jpg",
+                    "cost":749,
+                    "count":1,
+                    "type":"chappal"
+                },
                 {
                     "id":1,
                     "name":"ADDA MEN'S CHAPPLE / SLIPPERS IN BLUE COLOUR",
@@ -18,9 +40,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
-                    
-                },
+                    "size11":false,
+                    "type":"casualSlipper"
                 {
                     "id":2,
                     "name":"ADDA MEN’S CHAPPLE / SLIPPERS IN COLOUR BLACK",
@@ -37,7 +58,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":3,
@@ -55,7 +77,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":false,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":4,
@@ -73,7 +96,8 @@
                     "size8":true,
                     "size9":false,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":5,
@@ -91,7 +115,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":6,
@@ -109,7 +134,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":7,
@@ -127,7 +153,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":8,
@@ -145,7 +172,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":9,
@@ -163,7 +191,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":10,
@@ -181,7 +210,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":11,
@@ -199,7 +229,8 @@
                     "size8":false,
                     "size9":false,
                     "size10":false,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":12,
@@ -217,7 +248,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":13,
@@ -235,7 +267,8 @@
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
+                    "size11":false,
+                    "type":"casualSlipper"
                 },
                 {
                     "id":14,
@@ -246,19 +279,18 @@
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/12/7-12573-400x265.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/12/7-12572-150x99.jpg",
                     "cost":995,
-                    "slipon":true,
+                    "slipon":false,
                     "count":1,
                     "size6":true,
                     "size7":true,
                     "size8":true,
                     "size9":true,
                     "size10":true,
-                    "size11":false
-                }
-            ],
-            "casualSandals":[
+                    "size11":false,
+                    "type":"casualSlipper"
+                },
                 {
-                    "id":1,
+                    "id":15,
                     "name":"P&G MEN’S SANDALS in BROWN",
                     "name1":"P&G MEN’S SANDALS in BROWN",
                     "image1":"https://www.uboric.com/wp-content/uploads/2019/12/16-11057-400x267.jpg",
@@ -272,10 +304,11 @@
                     "size7":true,
                     "size8":true,
                     "size9":true,
-                    "size10":true
+                    "size10":true,
+                    "type":"casualSandal"
                 },
                 {
-                    "id":2,
+                    "id":16,
                     "name":"P&G MEN’S SANDALS in TAN",
                     "name1":"P&G MEN’S SANDALS in TAN",
                     "image1":"https://www.uboric.com/wp-content/uploads/2019/12/16-11062-400x267.jpg",
@@ -289,10 +322,11 @@
                     "size7":true,
                     "size8":true,
                     "size9":true,
-                    "size10":true
+                    "size10":true,
+                    "type":"casualSandal"
                 },
                 {
-                    "id":3,
+                    "id":17,
                     "name":"S.SERIES MEN’S CASUAL SANDALS in MAROON",
                     "name1":"S.SERIES MEN’S CASUAL SANDALS in MAROON",
                     "image1":"https://www.uboric.com/wp-content/uploads/2019/11/21-1060-400x267.jpg",
@@ -306,10 +340,11 @@
                     "size7":false,
                     "size8":true,
                     "size9":false,
-                    "size10":true
+                    "size10":true,
+                    "type":"casualSandal"
                 },
                 {
-                    "id":4,
+                    "id":18,
                     "name":"BANISH MEN’S SANDAL in BROWN",
                     "name1":"BANISH MEN’S SANDAL in BROWN",
                     "image1":"https://www.uboric.com/wp-content/uploads/2019/11/banish_bn57_DSC_0099-400x300.jpg",
@@ -323,12 +358,11 @@
                     "size7":false,
                     "size8":true,
                     "size9":true,
-                    "size10":true
-                }
-            ],
-            "CasualShoes":[
+                    "size10":true,
+                    "type":"casualSandal"
+                },
                 {
-                    "id":1,
+                    "id":19,
                     "name":"WOODLAND MEN’S CASUAL/PARTY SHOES IN TAN COLOUR",
                     "name1":"WOODLAND MEN’S CASUAL/PARTY SHOES IN TAN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/71QhNy9CkiL._UL1500_-400x177.png",
@@ -345,10 +379,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"TAN"
+                    "colour":"TAN",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":2,
+                    "id":20,
                     "name":"ID MEN’S CASUAL / PARTY SHOES IN BLACK COLOUR",
                     "name1":"ID MEN’S CASUAL / PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/id2071black-5-id-black-original-imafp65fhcqmbgkg-100x100.png",
@@ -365,10 +400,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":true,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":3,
+                    "id":21,
                     "name":"GARMONT MEN’S CASUAL/PARTY SHOES IN BLUE COLOUR",
                     "name1":"GARMONT MEN’S CASUAL/PARTY SHOES IN BLUE...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_1011_result-100x100.jpg",
@@ -385,10 +421,11 @@
                     "size9":true,
                     "size10":false,
                     "size11":false,
-                    "colour":"BLUE"
+                    "colour":"BLUE",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":4,
+                    "id":22,
                     "name":"GARMONT MEN’S CASUAL/PARTY SHOES IN BROWN COLOUR",
                     "name1":"GARMONT MEN’S CASUAL/PARTY SHOES IN BROWN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0695_result-100x100.jpg",
@@ -405,10 +442,11 @@
                     "size9":true,
                     "size10":false,
                     "size11":false,
-                    "colour":"BROWN"
+                    "colour":"BROWN",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":5,
+                    "id":23,
                     "name":"GARMONT MEN’S CASUAL/PARTY SHOES IN BROWN COLOUR",
                     "name1":"GARMONT MEN’S CASUAL/PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_1007_result-100x100.jpg",
@@ -425,10 +463,11 @@
                     "size9":true,
                     "size10":false,
                     "size11":false,
-                    "colour":"BROWN"
+                    "colour":"BROWN",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":6,
+                    "id":24,
                     "name":"LEE COOPER MEN’S LOAFERS SHOES IN BLUE COLOUR",
                     "name1":"LEE COOPER MEN’S LOAFERS SHOES IN BLUE...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0687_result-100x100.jpg",
@@ -445,10 +484,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLUE"
+                    "colour":"BLUE",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":7,
+                    "id":25,
                     "name":"HUSH PUPPIES MEN’S / CASUAL PARTY SHOES IN BLACK COLOUR",
                     "name1":"HUSH PUPPIES MEN’S / CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0638_result-100x100.jpg",
@@ -465,10 +505,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":8,
+                    "id":26,
                     "name":"WOODS MEN’S / CASUAL PARTY SHOES IN BLACK COLOUR",
                     "name1":"WOODS MEN’S / CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0903_result-100x100.jpg",
@@ -485,10 +526,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":9,
+                    "id":27,
                     "name":"WOODS MEN’S / CASUAL PARTY SHOES IN BLACK COLOUR",
                     "name1":"WOODS MEN’S / CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0911_result-100x100.jpg",
@@ -505,10 +547,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":10,
+                    "id":28,
                     "name":"WOODS MEN’S / CASUAL PARTY SHOES IN BLACK COLOUR",
                     "name1":"WOODS MEN’S / CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0943_result-100x100.jpg",
@@ -525,10 +568,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":11,
+                    "id":29,
                     "name":"WOODS MEN’S / CASUAL PARTY SHOES IN BLACK COLOUR",
                     "name1":"WOODS MEN’S / CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0951_result-100x100.jpg",
@@ -545,10 +589,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":12,
+                    "id":30,
                     "name":"WOODS MEN’S / CASUAL PARTY SHOES IN BLACK COLOUR",
                     "name1":"WOODS MEN’S / CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0967_result-100x100.jpg",
@@ -565,10 +610,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":13,
+                    "id":31,
                     "name":"WOODS MEN’S / CASUAL PARTY SHOES IN BLACK COLOUR",
                     "name1":"WOODS MEN’S / CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0999_result-100x100.jpg",
@@ -585,10 +631,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":14,
+                    "id":32,
                     "name":"WOODS MEN’S / CASUAL PARTY SHOES IN BROWN COLOUR",
                     "name1":"WOODS MEN’S / CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0975_result-100x100.jpg",
@@ -605,17 +652,18 @@
                     "size9":false,
                     "size10":false,
                     "size11":true,
-                    "colour":"BROWN"
+                    "colour":"BROWN",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":15,
+                    "id":33,
                     "name":"LEE COOPER MEN’S /CASUAL PARTY SHOES IN BROWN COLOUR",
                     "name1":"LEE COOPER MEN’S /CASUAL PARTY SHOES IN BROWN COLOUR",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0630_result-100x100.jpg",
                     "image2":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0632_result-100x100.jpg",
                     "image3":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0633_result-100x100.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0631_result-100x100.jpg",
-                    "cost":0,
+                    "cost":1799,
                     "slipon":false,
                     "laceup":true,
                     "count":1,
@@ -625,10 +673,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":16,
+                    "id":34,
                     "name":"LEE COOPER MEN’S CASUAL/PARTY SHOES IN TAN COLOUR",
                     "name1":"LEE COOPER MEN’S CASUAL/PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0646_result-100x100.jpg",
@@ -645,10 +694,11 @@
                     "size9":true,
                     "size10":false,
                     "size11":false,
-                    "colour":"BROWN"
+                    "colour":"BROWN",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":17,
+                    "id":35,
                     "name":"LEE COOPER MEN’S/CASUAL PARTY SHOES IN BLACK COLOUR",
                     "name1":"LEE COOPER MEN’S/CASUAL PARTY SHOES IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0642_result-100x100.jpg",
@@ -665,10 +715,11 @@
                     "size9":true,
                     "size10":false,
                     "size11":false,
-                    "colour":"TAN"
+                    "colour":"TAN",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":18,
+                    "id":36,
                     "name":"LEE-COOPER MEN’S / CASUAL LOAFER IN BLACK COLOUR",
                     "name1":"LEE-COOPER MEN’S / CASUAL LOAFER IN...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0622_result-100x100.jpg",
@@ -685,10 +736,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":true,
-                    "colour":"TAN"
+                    "colour":"TAN",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":19,
+                    "id":37,
                     "name":"AVERY MEN’S CASUAL/PARTY SHOES in BLACK",
                     "name1":"AVERY MEN’S CASUAL/PARTY SHOES in...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2019/12/19-11017-100x100.png",
@@ -705,10 +757,11 @@
                     "size9":true,
                     "size10":true,
                     "size11":false,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
                 },
                 {
-                    "id":20,
+                    "id":38,
                     "name":"AVERY MEN’S CASUAL/PARTY SHOES in BROWN",
                     "name1":"AVERY MEN’S CASUAL/PARTY SHOES in...",
                     "image1":"https://www.uboric.com/wp-content/uploads/2019/12/19-11027-100x100.png",
@@ -725,11 +778,128 @@
                     "size9":false,
                     "size10":true,
                     "size11":true,
-                    "colour":"BLACK"
+                    "colour":"BLACK",
+                    "type":"casualShoe"
+                },
+                {
+                    "id":39,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in NAVY/GREY",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in NAVY/GREY",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0409_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0410_result-400x265.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0411_result-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0412_result-400x265.jpg",
+                    "cost":565,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":40,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in BROWN",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in BROWN",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0417_result-400x270.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0418_result-400x265.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0419_result-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0420_result-400x265.jpg",
+                    "cost":549,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":41,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in BLACK",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in BLACK",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0373_result.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0374_result.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0375_result.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0376_result.jpg",
+                    "cost":599,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":42,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in BLACK/GREY",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in BLACK/GREY",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0413_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0414_result-400x265.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0415_result-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0416_result-400x265.jpg",
+                    "cost":549,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":43,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in BROWN",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in BROWN",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0377_result.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0378_result.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0379_result.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0380_result.jpg",
+                    "cost":629,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":44,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in BROWN",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in BROWN",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0421_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0422_result-400x265.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0423_result-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0424_result-400x265.jpg",
+                    "cost":549,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":45,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in GREY/NAVY/RED",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in GREY/NAVY/RED",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0385_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0386_result-400x267.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0387_result-400x273.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0388_result-400x265.jpg",
+                    "cost":549,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":46,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in NAVY",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in NAVY",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0397_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0398_result-400x265.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0399_result-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0400_result-400x265.jpg",
+                    "cost":649,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":47,
+                    "name":"ADDA MEN’S CHAPPAL/SLIPPERS in NAVY/GREY",
+                    "name1":"ADDA MEN’S CHAPPAL/SLIPPERS in NAVY/GREY",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0393_result-400x265.jpg",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0394_result-400x265.jpg",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0395_result-400x265.jpg",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2020/12/DSC_0396_result-400x265.jpg",
+                    "cost":0,
+                    "count":1,
+                    "type":"flipflop"
+                },
+                {
+                    "id":48,
+                    "name":"ADDA MEN’S FLIP FLOPS in BLACK/BLUE",
+                    "name1":"ADDA MEN’S FLIP FLOPS in BLACK/BLUE",
+                    "image1":"https://www.uboric.com/wp-content/uploads/2019/11/11-11086-400x267.png",
+                    "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11087-400x267.png",
+                    "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11088-400x267.png",
+                    "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11089-400x267.png",
+                    "cost":639,
+                    "count":1,
+                    "type":"flipflop"
                 }
-            ]
-        }
-    ],
-    "Kitchen":[  
     ]
 }
