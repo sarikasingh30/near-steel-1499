@@ -3,6 +3,7 @@ import {
   CHECK_REGISTER_USER_ERROR,
   CHECK_REGISTER_USER_REQUEST,
   CHECK_REGISTER_USER_SUCCESS,
+  LOGOUT_USER,
   REGISTER_USER_ERROR,
   REGISTER_USER_REQUEST,
   REGISTER_USER_SUCCESS,
@@ -37,6 +38,13 @@ const reducer = (state = initialState, action) => {
     case CHECK_REGISTER_USER_ERROR: {
       return { ...state, isError: true, isLoading: false };
     }
+
+    //logout
+    case LOGOUT_USER: {
+      localStorage.removeItem("token");
+      return { ...state, isLoading: false, token: "", isAuth: false };
+    }
+
     default:
       return state;
   }

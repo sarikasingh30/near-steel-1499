@@ -83,7 +83,7 @@ const CasualSlippers = () => {
           <input  type="checkbox"/> SLIP ON (9)
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
