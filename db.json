@@ -10,12 +10,7 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0575_result.jpg",
                     "image3":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0573_result.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0574_result.jpg",
-<<<<<<< HEAD
                     "cost":675
-=======
-                    "cost":675,
-                    "slipon":false
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":2,
@@ -25,12 +20,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0832_result-100x100.jpg",
                     "image3":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0833_result-100x100.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0834_result-100x100.jpg",
-<<<<<<< HEAD
-                    "cost":675
-=======
                     "cost":675,
                     "slipon":false
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":3,
@@ -40,12 +31,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0776_result-100x100.jpg",
                     "image3":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0777_result-100x100.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0778_result-100x100.jpg",
-<<<<<<< HEAD
-                    "cost":769
-=======
                     "cost":769,
                     "slipon":false
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":4,
@@ -55,12 +42,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0808_result.jpg",
                     "image3":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0809_result.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2021/02/DSC_0810_result.jpg",
-<<<<<<< HEAD
-                    "cost":699
-=======
                     "cost":699,
                     "slipon":false
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":5,
@@ -70,12 +53,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0581_result.jpg",
                     "image3":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0582_result.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2021/01/DSC_0583_result.jpg",
-<<<<<<< HEAD
-                    "cost":649
-=======
                     "cost":649,
                     "slipon":false
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":6,
@@ -85,12 +64,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11117-100x100.png",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11119-100x100.png",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11120-100x100.png",
-<<<<<<< HEAD
-                    "cost":499
-=======
                     "cost":499,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":7,
@@ -100,12 +75,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11142.png",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11144.png",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11145.png",
-<<<<<<< HEAD
-                    "cost":499
-=======
                     "cost":499,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":8,
@@ -115,12 +86,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11137.png",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11139.png",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11140.png",
-<<<<<<< HEAD
-                    "cost":499
-=======
                     "cost":499,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":9,
@@ -130,12 +97,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/11/12-11080-400x267.png",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/11/12-11082-150x100.png",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/11/12-11083-150x100.png",
-<<<<<<< HEAD
-                    "cost":419
-=======
                     "cost":419,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":10,
@@ -145,12 +108,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/11/8-11002.png",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/11/8-11004.png",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/11/8-11005.png",
-<<<<<<< HEAD
-                    "cost":899
-=======
                     "cost":899,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":11,
@@ -160,12 +119,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/11/7-11150-400x267.png",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/11/7-11151-400x267.png",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/11/7-11152-400x267.png",
-<<<<<<< HEAD
-                    "cost":899
-=======
                     "cost":899,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":12,
@@ -175,12 +130,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/11/11-11077-400x267.png",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/11/11-11078-400x267.png",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/11/11-11079-400x267.png",
-<<<<<<< HEAD
-                    "cost":499
-=======
                     "cost":499,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":13,
@@ -190,12 +141,8 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/12/7-12552.jpg",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/12/7-12553.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/12/7-12554.jpg",
-<<<<<<< HEAD
-                    "cost":955
-=======
                     "cost":955,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 },
                 {
                     "id":14,
@@ -205,9 +152,6 @@
                     "image2":"https://www.uboric.com/wp-content/uploads/2019/12/7-12570-150x99.jpg",
                     "image3":"https://www.uboric.com/wp-content/uploads/2019/12/7-12573-400x265.jpg",
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/12/7-12572-150x99.jpg",
-<<<<<<< HEAD
-                    "cost":995
-=======
                     "cost":995,
                     "slipon":true
                 }
@@ -311,7 +255,6 @@
                     "image4":"https://www.uboric.com/wp-content/uploads/2019/12/7-12572-150x99.jpg",
                     "cost":995,
                     "slipon":true
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
                 }
             ]
         }
