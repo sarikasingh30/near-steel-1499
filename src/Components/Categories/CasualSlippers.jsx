@@ -117,7 +117,7 @@ const CasualSlippers = () => {
           <input onClick={()=>handleSlipon()} type="checkbox"/> SLIP ON (9)
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useState} from 'react';
+
 
 const Footer = () => {
   return (
@@ -7,5 +8,6 @@ const Footer = () => {
     </div>
   )
 }
+
 
 export default Footer

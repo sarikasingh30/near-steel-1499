@@ -7,6 +7,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
 //import { VscTriangleDown } from "react-icons/vsc";
 
+
 const Navbar = () => {
   return (
     <div className="navbar">
