@@ -14,11 +14,11 @@ const HomePage = () => {
   return (
     <div className="App">
       <HomeTopSliding />
-      //create routes for these
+      {/* //create routes for these
       <CasualSlippers/>
       <CasualSandals/>
       <CasualPartyShoes/>
-      //....................
+      //.................... */}
       <Kitchen />
       <Support />
       <OtherHome />

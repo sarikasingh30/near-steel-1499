@@ -1,0 +1,116 @@
+
+
+.text{
+    height: 500px;
+    width: 1140px;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    background-color: #faf8f8;
+    margin-top:50px;
+
+}
+.textbig{
+    font-family: Lato,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height:30px;
+    text-decoration: none solid rgb (30 81 108);
+    text-align: center;
+    height:60px;
+    width: 1100px;
+    color: #1e516c;
+    margin-top:30px;
+}
+.textp{
+    font-family: Lato,sans-serif;
+    line-height: 30px;
+    width: 1120px;
+    margin-top:20px;
+
+}
+.textl{
+    font-family: Lato,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height:30px;
+    text-decoration: none solid rgb (30 81 108);
+    text-align: center;
+    height:60px;
+    width: 1100px;
+    color: #1e516c;
+    margin-top:30px;
+   padding-top:10px;
+} 
+
+
+
+
+  .Footer{
+    height:400px;
+    width:100%;
+    background-color: black;
+    border :1px solid red;
+}
+.footerimg{
+    margin-left:40%;
+    margin-top: 100px;
+}
+.footertext{
+    display:flex;
+    justify-content: space-between;
+    width:70%;
+    margin: auto;
+    color:white;
+    font-size: medium;
+    font-weight:600;
+    
+}
+.reserved{
+    text-align: center;
+    color: white;
+}
+.contect{
+    margin:auto;
+    width:20%;
+    display: flex;
+    color: white;
+}
+.FacebookIcon{
+    font-size: large;
+    border-radius:50px;
+    margin-top:6px;
+    color: black;
+    border-radius: 50%;
+    margin-left:6px;
+}
+.icons{
+    height: 46.8px;
+    width: 46.8px;
+    border-radius: 50%;
+    background-color:#ffce61;
+    margin-left: 400px;
+}
+.icons1{
+    height: 46.8px;
+    width: 46.8px;
+    border-radius: 50%;
+    background-color:#ffce61;
+    margin-left:20px;
+}
+.insta{
+    font-size: large;
+    border-radius:50px;
+    margin-top:6px;
+    color: black;
+    border-radius: 50%;
+    margin-left:6px;
+
+}
+.icons:hover{
+    background-color: white;
+}
+.icons1:hover{
+    background-color: white;
+}
