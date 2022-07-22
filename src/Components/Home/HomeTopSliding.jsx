@@ -1,9 +1,9 @@
 import React from "react";
 import { Grid, GridItem, Box, Image } from "@chakra-ui/react";
-import pic1 from "../Components/homePageImages/pic1.PNG";
-import pic2 from "../Components/homePageImages/pic2.PNG";
-import pic3 from "../Components/homePageImages/pic3.PNG";
-import pic4 from "../Components/homePageImages/pic4.PNG";
+import pic1 from "./homePageImages/pic1.PNG";
+import pic2 from "./homePageImages/pic2.PNG";
+import pic3 from "./homePageImages/pic3.PNG";
+import pic4 from "./homePageImages/pic4.PNG";
 
 import Carousel from "react-bootstrap/Carousel";
 

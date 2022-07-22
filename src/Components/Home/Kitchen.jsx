@@ -9,6 +9,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
+// import styles from "../Home/style.module.css";
 import styles from "./style.module.css";
 
 const Kitchen = () => {
