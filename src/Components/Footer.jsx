@@ -46,7 +46,6 @@ const Footer = () => {
 
       <div>
         <h1>What Our Customer Says</h1>
-        <h1>hi updated</h1>
       </div>
       <div className="Footer">
         <div>

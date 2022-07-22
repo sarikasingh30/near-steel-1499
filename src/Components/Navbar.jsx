@@ -6,52 +6,56 @@ import { FaCartPlus } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
 import { Link as RouterLink } from "react-router-dom";
-//import { VscTriangleDown } from "react-icons/vsc";
 
+//import { VscTriangleDown } from "react-icons/vsc";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const isAuth = useSelector((store) => store.AuthReducer.isAuth);
   return (
-    <div className="navbar">
-      <div className="first_row">
+    <div className="navbar" >
+      <div className="first_row" >
         FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500
       </div>
-      <div className="second_row">
+      <div className="second_row" >
         <div className="search_box">
           <div className="box">
             <input
               type="search"
               className="orig"
               placeholder="Search here..."
-              autocomplete="off"
+              autoComplete="off"
             ></input>
 
             <AiOutlineSearch size="2rem" />
           </div>
         </div>
-        <div className="imageDiv">
-          <img
-            className="logo_image"
-            src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg"
-            alt="logo_img"
-          />
-        </div>
-        <div  className="iconsDiv">
-          <div className="second">
-            <MdAccountCircle size="35px" />
+        <div className="second_box_main">
+          <div className="imageDiv">
+            <img
+              className="logo_image"
+              src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg"
+              alt="logo_img"
+            />
           </div>
-          <div className="third">
-            <FaCartPlus size="35px" />
-          </div>
-          <div className="CartCount">
-            <p>(0)</p>
+          <div className="iconsDiv">
+            <div className="second">
+              <MdAccountCircle size="35px" />
             </div>
+            <div className="third">
+              <FaCartPlus size="35px" />
+            </div>
+            <div className="CartCount">
+              <p>(0)</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="bar">
-        <a className="bar1" href="/">
+        <RouterLink className="bar1" to="/">
           Home
-        </a>
-        <a className="bar1" href="/categories">
+        </RouterLink>
+        <div className="bar1">
           <div className="drop_down">
             Categories
             <div className="drop_down_content">
@@ -64,10 +68,18 @@ const Navbar = () => {
                         <div>
                           <p className="wear">Foot Wear</p>
                           <p className="wear">Men's footwear</p>
-                          <RouterLink to="/product-category/casual-slippers"><p className="wear1">Casual Chapple/Slippers</p></RouterLink>
-                          <RouterLink to="/product-category/casual-sandals"><p className="wear1">Casual Sandals</p></RouterLink>
-                          <RouterLink to="/product-category/casual-partyshoes"><p className="wear1">Casual/Party Shoes</p></RouterLink>
-                          <p className="wear1">Chappal /Slippers</p>
+                          <RouterLink to="/product-category/casual-slippers">
+                            <p className="wear1">Casual Chapple/Slippers</p>
+                          </RouterLink>
+                          <RouterLink to="/product-category/casual-sandals">
+                            <p className="wear1">Casual Sandals</p>
+                          </RouterLink>
+                          <RouterLink to="/product-category/casual-partyshoes">
+                            <p className="wear1">Casual/Party Shoes</p>
+                          </RouterLink>
+                          <RouterLink to="/product-category/chappal-slippers">
+                            <p className="wear1">Chappal /Slippers</p>
+                          </RouterLink>
                           <p className="wear1">Crocs</p>
                           <p className="wear1">Flip Flops</p>
                           <p className="wear1">Loafers</p>
@@ -198,16 +210,19 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a className="bar1" href="/login">
+        </div>
+        <RouterLink
+          className="bar1"
+          to={isAuth === false ? "/login" : "/myaccount"}
+        >
           Customer/Guest login
-        </a>
-        <a className="bar1" href="/Merchant">
+        </RouterLink>
+        <p className="bar1">
           Merchant/Bulk Order
-        </a>
-        <a className="bar1" href="/BestSeller">
+        </p>
+        <RouterLink className="bar1" to="/BestSeller">
           Become A Seller
-        </a>
+        </RouterLink>
       </div>
     </div>
   );

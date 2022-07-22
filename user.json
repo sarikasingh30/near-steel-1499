@@ -11,6 +11,12 @@
       "password": "12345",
       "token": "335c3a16-cbd0-448a-abeb-08af05c3dab7",
       "id": 2
+    },
+    {
+      "email": "sam123@gmail.com",
+      "password": "123123",
+      "token": "4f622fc2-993f-4d49-87cf-808d8bb1bef4",
+      "id": 3
     }
   ]
 }
