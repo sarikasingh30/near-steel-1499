@@ -6,13 +6,14 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import { Link as RouterLink } from "react-router-dom";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
-const CasualSlippers = () => { 
+const CasualPartyShoes = () => { 
 
   const dispatch = useDispatch();
   const data = useSelector(store=>store.AppReducer.products);
+
+
   const dataaction = () => {
     const request = dispatch(getDataRequest());
     axios
@@ -38,7 +39,7 @@ const CasualSlippers = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Casual Chapple/Slippers
+          Casual/Party Shoes
         </h1>
         <Box mb="6">
           <span
@@ -57,16 +58,15 @@ const CasualSlippers = () => {
           <ArrowRightIcon height="6px" />
           <span
             height="19px"
-            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
-          >
-            Casual Chapple/Slippers
+            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}>
+            Casual/Party Shoes
           </span>
         </Box>
       </div>
       <div id="base">
         <div id="grid">
           {data.map((item) =>{
-            if(item.type === "casualSlipper"){
+            if(item.type === "casualShoe"){
               return(
                 <Contains key={item.id} data={item} />
               )
@@ -85,4 +85,4 @@ const CasualSlippers = () => {
   );
 };
 
-export default CasualSlippers;
+export default CasualPartyShoes;

@@ -26,16 +26,13 @@
     "react-slick": "^0.29.0",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1",
-<<<<<<< HEAD
     "styled-components": "^5.3.5",
-=======
     "uuid": "^8.3.2",
->>>>>>> 9f75916c10b00cc0a38f371936fe7c3551a63674
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "userserver": "json-server --watch user.json --port 5000",
-    "dbserver":"json-server --watch db.json --port 8080",
+    "dbserver": "json-server --watch db.json --port 8080",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

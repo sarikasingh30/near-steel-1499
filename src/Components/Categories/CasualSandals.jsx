@@ -6,13 +6,14 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import { Link as RouterLink } from "react-router-dom";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
-const CasualSlippers = () => { 
+const CasualSandals = () => { 
 
   const dispatch = useDispatch();
   const data = useSelector(store=>store.AppReducer.products);
+
+
   const dataaction = () => {
     const request = dispatch(getDataRequest());
     axios
@@ -27,7 +28,7 @@ const CasualSlippers = () => {
 
 
   return (
-    <div>
+    <>
       <div>
         <h1
           style={{
@@ -38,7 +39,7 @@ const CasualSlippers = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Casual Chapple/Slippers
+          Casual Sandals
         </h1>
         <Box mb="6">
           <span
@@ -59,14 +60,14 @@ const CasualSlippers = () => {
             height="19px"
             style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
           >
-            Casual Chapple/Slippers
+            Casual Sandals
           </span>
         </Box>
       </div>
       <div id="base">
         <div id="grid">
           {data.map((item) =>{
-            if(item.type === "casualSlipper"){
+            if(item.type === "casualSandal"){
               return(
                 <Contains key={item.id} data={item} />
               )
@@ -81,8 +82,9 @@ const CasualSlippers = () => {
           <input  type="checkbox"/> SLIP ON (9)
         </div>
       </div>
-    </div>
+    
+    </>
   );
 };
 
-export default CasualSlippers;
+export default CasualSandals;
