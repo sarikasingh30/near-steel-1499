@@ -21,9 +21,9 @@ import SingleProduct from './SingleProduct'
 const MainRoutes = () => {
   return (
     <>
-    <Navbar/>
-    <Routes>
-        <Route path="/" element={<HomePage/>}/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/bestseller" element={<BestSeller/>}/>
         <Route path="/product-category/casual-slippers" element={<CasualSlippers/>}/>
@@ -37,9 +37,12 @@ const MainRoutes = () => {
         <Route path="/product-Kitchenware-Tools" element={<KitchenTool/>} />
         <Route path="/product-Mensfootwear" element={<MensFootwear/>} />
         <Route path="/product-footwear" element={<Footwear/>} />
+
+        <Route path="/cart" element={<Cart />} />
+
         {/* <Route path="/casual-slippers/:id" element={<SingleProduct/>}/> */}
-    </Routes>
-    <Footer/>
+      </Routes>
+      <Footer />
     </>
   );
 };
