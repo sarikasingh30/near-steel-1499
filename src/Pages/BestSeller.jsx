@@ -7,6 +7,7 @@ import {
   Text,
   Input,
   FormControl,
+  Heading,
   FormLabel,
   FormHelperText,
   Textarea,
@@ -19,19 +20,20 @@ const BestSeller = () => {
         <Container maxW="6xl">
           <Flex direction="column">
             <Box>
-              <h1
+              <Heading
                 style={{
-                  fontSize: "1.125rem",
+                  fontSize: "20px",
                   lineHeight: "26px",
                   fontWeight: "700",
                   letterSpacing: "3px",
                   color: "rgb(30,86,160)",
                 }}
+                textAlign="center"
               >
                 Become A Seller
-              </h1>
+              </Heading>
             </Box>
-            <Box>
+            <Box textAlign="center">
               <span
                 height="19px"
                 style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
