@@ -1,18 +1,19 @@
 
 
 .text{
-    height: 500px;
+    height: 600px;
     width: 1140px;
     padding: 10px 10px 10px 10px;
     margin: auto;
     background-color: #faf8f8;
     margin-top:50px;
+   
 
 }
 .textbig{
     font-family: Lato,sans-serif;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 5px;
     line-height:30px;
     text-decoration: none solid rgb (30 81 108);
@@ -45,13 +46,83 @@
 } 
 
 
+.option{
+    display: flex;
+    /* justify-content: space-between; */
+    gap:10px;
+    /* padding: 0 0 0 150px; */
+    margin-bottom: 300px;
+   
+    
+    
+}
+.option div{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+}
+  
+.rigthttik{
+    padding: 0 5px 0 0;
+    font-weight: 500;
+    font-size: 22px;
+    font-stretch: expanded;
+    color: #096ba0;
+}
+
+    /* review part */
+.reviewContainer{
+    background-color: #83751a;
+    align-items: center;
+    margin-top:10px;
+    height:500px;
+    text-align: center;
+   
+  }
+  .carousel {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    margin-bottom: 100px;
+  }
+  .reviewCard {
+      margin-top:20px;
+    width: 33%;
+    gap: 2%;
+    justify-content: center;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: Lato,sans-serif;
+  }
+  
+  .reviewHeading{
+      padding-top: 40px;
+      color: white;
+  }
+  .btn{
+    background-color: #ffce61;
+    border-radius: 5px;
+    border: transparent;
+    padding: 8px 15px 8px 15px;
+    font-size:large;
+    font-weight: 400;
+    font-family: lato,sans-serif;
+  
+  }
+  .btn:hover{
+    background-color: white;
+  }
+  
 
 
   .Footer{
     height:400px;
     width:100%;
     background-color: black;
-    border :1px solid black;
+   
 }
 .footerimg{
     margin-left:40%;
@@ -78,39 +149,64 @@
     color: white;
 }
 .FacebookIcon{
-    font-size: large;
-    border-radius:50px;
-    margin-top:6px;
-    color: black;
-    border-radius: 50%;
-    margin-left:6px;
+    font-size: 30px;
+    padding: 4px 4px 2px 0;
+    border-radius: 30px;
+     margin-top:6px;
+     color: black;
+    
+     margin-left:6px;
 }
 .icons{
-    height:50px;
-    width: 50px;
+    height: 46.8px;
+    width: 46.8px;
     border-radius: 50%;
     background-color:#ffce61;
     margin-left: 400px;
 }
 .icons1{
-    height: 50px;
-    width: 50px;
+    height: 46.8px;
+    width: 46.8px;
     border-radius: 50%;
     background-color:#ffce61;
     margin-left:20px;
 }
 .insta{
-    font-size: large;
-    border-radius:50px;
+    font-size: 30px;
+   padding: 4px 4px 2px 0;
+   border-radius: 30px;
     margin-top:6px;
     color: black;
-    border-radius: 50%;
+   
     margin-left:6px;
 
+}
+.plus{
+    font-size: 30px;
+   font-weight: 700;
+   padding: 4px 0 0 7px;
+    border-radius: 30px;
+     margin-top:6px;
+     color: white;
+    
+     margin-left:6px;
 }
 .icons:hover{
     background-color: white;
 }
 .icons1:hover{
     background-color: white;
+}
+
+.icons2:hover{
+    background-color: rgba(56, 122, 166, 0.577);
+}
+
+.icons2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:#e85a18;
+    margin-left:20px;
+    margin-left: 60px;
 }
