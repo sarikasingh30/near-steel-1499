@@ -1,15 +1,22 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import {Routes,Route} from "react-router-dom"
+import AirTightContainer from "../Components/Categories/AirTightContainer";
 import CasualPartyShoes from "../Components/Categories/CasualPartyShoes";
 import CasualSandals from "../Components/Categories/CasualSandals";
-import CasualSlippers from "../Components/Categories/CasualSlippers";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
-import BestSeller from "./BestSeller";
-import Cart from "./Cart";
-import HomePage from "./HomePage";
-import Login from "./Login";
-import SingleProduct from "./SingleProduct";
+import CasualSlippers from '../Components/Categories/CasualSlippers'
+import ChappalSlippers from "../Components/Categories/ChappalSlippers";
+import FlipFlop from "../Components/Categories/FlipFlop";
+import Footwear from "../Components/Categories/Footwear";
+import GasLighter from "../Components/Categories/GasLighter";
+import KitchenTool from "../Components/Categories/KitchenTool";
+import KitchenWares from "../Components/Categories/KitchenWares"
+import MensFootwear from "../Components/Categories/MensFootwear"
+import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
+import BestSeller from './BestSeller'
+import HomePage from './HomePage'
+import Login from "./Login"
+import SingleProduct from './SingleProduct'
 
 const MainRoutes = () => {
   return (
@@ -18,20 +25,21 @@ const MainRoutes = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/bestseller" element={<BestSeller />} />
-        <Route
-          path="/product-category/casual-slippers"
-          element={<CasualSlippers />}
-        />
-        <Route
-          path="/product-category/casual-sandals"
-          element={<CasualSandals />}
-        />
-        <Route
-          path="/product-category/casual-partyshoes"
-          element={<CasualPartyShoes />}
-        />
+        <Route path="/bestseller" element={<BestSeller/>}/>
+        <Route path="/product-category/casual-slippers" element={<CasualSlippers/>}/>
+        <Route path="/product-category/casual-sandals" element={<CasualSandals/>}/>
+        <Route path="/product-category/casual-partyshoes" element={<CasualPartyShoes/>}/>
+        <Route path="/product-chappal/slippers" element={<ChappalSlippers/>}/>
+        <Route path="/product-FlipFlops" element={<FlipFlop/>}/>
+        <Route path="/product-AirTightContainer" element={<AirTightContainer/>}/>
+        <Route path="/product-Kitchenware" element={<KitchenWares/>} />
+        <Route path="/product-Kitchenware-GasLighter" element={<GasLighter/>} />
+        <Route path="/product-Kitchenware-Tools" element={<KitchenTool/>} />
+        <Route path="/product-Mensfootwear" element={<MensFootwear/>} />
+        <Route path="/product-footwear" element={<Footwear/>} />
+
         <Route path="/cart" element={<Cart />} />
+
         {/* <Route path="/casual-slippers/:id" element={<SingleProduct/>}/> */}
       </Routes>
       <Footer />
