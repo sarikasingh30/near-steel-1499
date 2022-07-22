@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Contains from "./Contains";
 import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 import { Image } from '@chakra-ui/react';
 import { Link as RouterLink } from "react-router-dom";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
-import { useSelector,useDispatch } from "react-redux";
 
 const KitchenWares = () => {
     const data = [
@@ -26,7 +20,7 @@ const KitchenWares = () => {
         {
             image:"https://www.uboric.com/wp-content/uploads/2021/02/kithchen-tools-400x314.png",
             title:"Kitchen Tools",
-            path:"/product-Kitchenware"
+            path:"/product-Kitchenware-Tools"
         }
     ];
   return (

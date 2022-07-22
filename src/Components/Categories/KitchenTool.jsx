@@ -4,8 +4,6 @@ import Contains from "./Contains";
 import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
 const KitchenTool = () => { 
@@ -75,7 +73,7 @@ const KitchenTool = () => {
       <div id="base">
         <div id="grid">
           {data.map((item) =>{
-            if(item.type === "gaslighter"){
+            if(item.type === "Kitchentool"){
               return(
                 <Contains key={item.id} data={item} />
               )

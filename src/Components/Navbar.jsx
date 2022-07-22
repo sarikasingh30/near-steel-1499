@@ -101,7 +101,7 @@ const Navbar = () => {
                           <b><RouterLink to="/product-Kitchenware"><p className="wear1">Kitchen Ware</p></RouterLink></b>
                           <RouterLink to="/product-AirTightContainer"><p className="wear1">Air Tight Containers</p></RouterLink>
                           <RouterLink to="/product-Kitchenware-GasLighter"><p className="wear1">Gas Lighters</p></RouterLink>
-                          <p className="wear">Kitchen</p>
+                          <RouterLink to="/product-Kitchenware-Tools"><p className="wear1">Kitchen Tools</p></RouterLink>
                         </div>
                         <div>
                           <p className="wear">Household Supplies</p>

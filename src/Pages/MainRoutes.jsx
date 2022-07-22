@@ -8,6 +8,7 @@ import ChappalSlippers from "../Components/Categories/ChappalSlippers";
 import FlipFlop from "../Components/Categories/FlipFlop";
 import Footwear from "../Components/Categories/Footwear";
 import GasLighter from "../Components/Categories/GasLighter";
+import KitchenTool from "../Components/Categories/KitchenTool";
 import KitchenWares from "../Components/Categories/KitchenWares"
 import MensFootwear from "../Components/Categories/MensFootwear"
 import Footer from '../Components/Footer'
@@ -33,6 +34,7 @@ const MainRoutes = () => {
         <Route path="/product-AirTightContainer" element={<AirTightContainer/>}/>
         <Route path="/product-Kitchenware" element={<KitchenWares/>} />
         <Route path="/product-Kitchenware-GasLighter" element={<GasLighter/>} />
+        <Route path="/product-Kitchenware-Tools" element={<KitchenTool/>} />
         <Route path="/product-Mensfootwear" element={<MensFootwear/>} />
         <Route path="/product-footwear" element={<Footwear/>} />
         {/* <Route path="/casual-slippers/:id" element={<SingleProduct/>}/> */}
