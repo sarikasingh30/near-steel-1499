@@ -11,9 +11,8 @@
 }
 
 #filter{
-    max-width: 410px;
+    max-width: 4100px;
     width:410px;
-    border:2px solid blue;
 }
 
 @media all and (max-width:1115px){

@@ -16,7 +16,7 @@ const Contains = ({data}) => {
     }
     const handleEnter=()=>{
       setDisplay("grid");
-      setCost(<Button >SELECT OPTION</Button>)
+      setCost(<Button>SELECT OPTION</Button>)
     }
     const handleLeave=()=>{
       setDisplay("none");

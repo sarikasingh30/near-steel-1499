@@ -27,11 +27,13 @@ const Footer = () => {
           <img src="https://www.uboric.com/wp-content/uploads/2020/07/star.png" alt="" />
             
           </div>
+
           <div className="reviewCard">
           <p>"Best Place for Buying lots of Products at one place specially Purchased  Shoes here"</p>
           <p> "Adesh Patel"</p>
           <img src="https://www.uboric.com/wp-content/uploads/2020/07/star.png" alt="" />  
           </div>  
+
       </div>
       <button className='btn'>Add Your Review</button>
     </div>
