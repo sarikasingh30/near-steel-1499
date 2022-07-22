@@ -11,7 +11,7 @@ import GasLighter from "../Components/Categories/GasLighter";
 import KitchenTool from "../Components/Categories/KitchenTool";
 import KitchenWares from "../Components/Categories/KitchenWares"
 import MensFootwear from "../Components/Categories/MensFootwear"
-
+import Cart from "./Cart"
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import BestSeller from './BestSeller'
@@ -19,6 +19,7 @@ import HomePage from './HomePage'
 import Login from "./Login"
 import MyAccount from "./MyAccount";
 import SingleProduct from './SingleProduct'
+import NotFound from "./NotFound";
 
 const MainRoutes = () => {
   return (
@@ -33,15 +34,16 @@ const MainRoutes = () => {
         <Route path="/product-category/casual-sandals" element={<CasualSandals/>}/>
         <Route path="/product-category/chappal-slippers" element={<ChappalSlippers/>}/>
         <Route path="/product-category/casual-partyshoes" element={<CasualPartyShoes/>}/>
-        <Route path="/product-FlipFlops" element={<FlipFlop/>}/>
-        <Route path="/product-AirTightContainer" element={<AirTightContainer/>}/>
-        <Route path="/product-Kitchenware" element={<KitchenWares/>} />
-        <Route path="/product-Kitchenware-GasLighter" element={<GasLighter/>} />
-        <Route path="/product-Kitchenware-Tools" element={<KitchenTool/>} />
-        <Route path="/product-Mensfootwear" element={<MensFootwear/>} />
-        <Route path="/product-footwear" element={<Footwear/>} />
+        <Route path="/product-category/FlipFlops" element={<FlipFlop/>}/>
+        <Route path="/product-category/airTight" element={<AirTightContainer/>}/>
+        <Route path="/product-category/Kitchenware" element={<KitchenWares/>} />
+        <Route path="/product-category/Kitchenware-GasLighter" element={<GasLighter/>} />
+        <Route path="/product-category/Kitchenware-Tools" element={<KitchenTool/>} />
+        <Route path="/product-category/Mensfootwear" element={<MensFootwear/>} />
+        <Route path="/product-category/footwear" element={<Footwear/>} />
           <Route path="/:path/:id" element={<SingleProduct/>}/>
         <Route path="/cart" element={<Cart />} />
+        <Route path="/*" element={<NotFound/>}/>
 
         {/* <Route path="/casual-slippers/:id" element={<SingleProduct/>}/> */}
       </Routes>

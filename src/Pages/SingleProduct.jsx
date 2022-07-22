@@ -30,7 +30,7 @@ import {
 } from "../Redux/AppReducer/action";
 
 const SingleProduct = () => {
-  const products = useSelector((store) => store.AppReducer.products);
+  const data = useSelector((store) => store.AppReducer.products);
   const dispatch = useDispatch();
   const { path, id } = useParams();
   const [product, setProduct] = useState({});
@@ -47,16 +47,16 @@ const SingleProduct = () => {
   }, []);
 
   useEffect(() => {
-    if (path && id) {
-      const temp = products.find((item) => {
-        if (item.type === path && item.id === Number(id)) {
+    if (path&&id) {
+      const temp = data?.find((item) => {
+        if (item.type === path && item.id.toString() ===(id)) {
           return item;
         }
       });
       temp && setProduct(temp);
     }
-  }, [products, path, id]);
-
+  }, [data, path, id,setProduct]);
+console.log(product)
   return (
     <Box>
       <Box
@@ -358,9 +358,9 @@ const SingleProduct = () => {
           columns={{ xl: 4, lg: 2, md: 2, sm: 1 }}
           spacing="20px" width="90%" ml="5%"
         >
-           {products.splice(0,4).map((e)=>{
-              return( <Box key={e.id} borderRadius="5%" boxShadow='2xl' p='6'height="280px" rounded='md' bg='white'>
-                      <Image src={e.image1} width="90%" height="150px" ml="13%"/>
+           {data.splice(id,4).map((e)=>{
+              return( <Box key={e.id} borderRadius="5%" boxShadow='2xl' p='6' rounded='md' bg='white'>
+                      <Image src={e.image1} width="95%" height="60%" ml="5%"/>
                       <Text textAlign="center" fontSize="20px" lineHeight="25px">{e.name}</Text>
                       <Text mt="3%" textAlign="center" fontSize="15px" lineHeight="20px">₹ {e.cost}  (Inclusive of all Taxes)</Text>
               </Box>)

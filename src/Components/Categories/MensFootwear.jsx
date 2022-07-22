@@ -71,7 +71,7 @@ const MensFootwear = () => {
     ];
   return (
     <div>
-    <div>
+    <div style={{textAlign:"center"}}>
       <h1
         style={{
           fontWeight: "500",
@@ -81,7 +81,7 @@ const MensFootwear = () => {
           fontFamily: "sans-serif",
         }}
       >
-        Air Tight Containers
+        Mens FootWear
       </h1>
       <Box mb="6">
         <span
@@ -102,7 +102,7 @@ const MensFootwear = () => {
           height="19px"
           style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
         >
-          Kitchan Ware
+          FootWears
         </span>
       </Box>
     </div>
@@ -110,12 +110,12 @@ const MensFootwear = () => {
       <div id="grid">
         {data.map((item) =>{
             return(
-              <RouterLink to={item.path}>
+              
               <div className="modulebox">
                 <Image src={item.image} style={{height:"100%",margin:"auto"}} />
                 <h3>{item.title}</h3>
               </div>
-              </RouterLink>
+              
             )
           })}
       </div>
