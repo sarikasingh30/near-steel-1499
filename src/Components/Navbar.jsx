@@ -62,14 +62,14 @@ const Navbar = () => {
                     <div className="content1">
                       <div className="sub_content">
                         <div>
-                          <p className="wear">Foot Wear</p>
-                          <p className="wear">Men's footwear</p>
+                          <b><RouterLink to="/product-footwear"><p className="wear1">Foot Wear</p></RouterLink></b>
+                          <b><RouterLink to="/product-Mensfootwear"><p className="wear1">Men's footwear</p></RouterLink></b>
                           <RouterLink to="/product-category/casual-slippers"><p className="wear1">Casual Chapple/Slippers</p></RouterLink>
                           <RouterLink to="/product-category/casual-sandals"><p className="wear1">Casual Sandals</p></RouterLink>
                           <RouterLink to="/product-category/casual-partyshoes"><p className="wear1">Casual/Party Shoes</p></RouterLink>
-                          <p className="wear1">Chappal /Slippers</p>
+                          <RouterLink to="/product-chappal/slippers"><p className="wear1">Chappal/Slippers</p></RouterLink>
+                          <RouterLink to="/product-FlipFlops"><p className="wear1">FlipFlops</p></RouterLink>
                           <p className="wear1">Crocs</p>
-                          <p className="wear1">Flip Flops</p>
                           <p className="wear1">Loafers</p>
                           <p className="wear1">Mojdi</p>
                           <p className="wear1">Sneakers</p>
@@ -99,9 +99,9 @@ const Navbar = () => {
                     <div className="content1">
                       <div className="sub_content">
                         <div>
-                          <p className="wear">Kitchen Ware</p>
-                          <p className="wear">Air Tight</p>
-                          <p className="wear">Gas Lighter</p>
+                          <b><RouterLink to="/product-Kitchenware"><p className="wear1">Kitchen Ware</p></RouterLink></b>
+                          <RouterLink to="/product-AirTightContainer"><p className="wear1">Air Tight Containers</p></RouterLink>
+                          <RouterLink to="/product-Kitchenware-GasLighter"><p className="wear1">Gas Lighters</p></RouterLink>
                           <p className="wear">Kitchen</p>
                         </div>
                         <div>

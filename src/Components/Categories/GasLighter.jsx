@@ -8,7 +8,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
-const FlipFlop = () => { 
+const GasLighter = () => { 
 
   const dispatch = useDispatch();
   const data = useSelector(store=>store.AppReducer.products);
@@ -39,7 +39,7 @@ const FlipFlop = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Casual Chapple/Slippers
+          Gas Lighters
         </h1>
         <Box mb="6">
           <span
@@ -55,19 +55,27 @@ const FlipFlop = () => {
           >
             Products
           </span>
+          
           <ArrowRightIcon height="6px" />
           <span
             height="19px"
             style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
           >
-            Casual Chapple/Slippers
+            Kitchen Ware
+          </span>
+          <ArrowRightIcon height="6px" />
+          <span
+            height="19px"
+            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
+          >
+            Gas Lighters
           </span>
         </Box>
       </div>
       <div id="base">
         <div id="grid">
           {data.map((item) =>{
-            if(item.type === "flipflop"){
+            if(item.type === "gaslighter"){
               return(
                 <Contains key={item.id} data={item} />
               )
@@ -80,4 +88,4 @@ const FlipFlop = () => {
   );
 };
 
-export default FlipFlop;
+export default GasLighter;
