@@ -29,7 +29,7 @@ const FlipFlop = () => {
 
   return (
     <div>
-      <div>
+      <div style={{textAlign:"center"}}>
         <h1
           style={{
             fontWeight: "500",

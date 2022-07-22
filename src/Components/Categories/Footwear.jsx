@@ -6,8 +6,7 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 import { Image } from '@chakra-ui/react';
 import { Link as RouterLink } from "react-router-dom";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
 
@@ -15,13 +14,13 @@ const Footwear = () => {
     const data = [
         {
             image:"https://www.uboric.com/wp-content/uploads/2020/12/1335958783_WP_Guardiani-e1607677359150-400x319.png",
-            title:"Men's fottwear",
+            title:"Men's footwear",
             path:"/product-Mensfootwear"
         }
     ];
   return (
     <div>
-    <div>
+    <div style={{textAlign:"center"}}>
       <h1
         style={{
           fontWeight: "500",
@@ -31,7 +30,7 @@ const Footwear = () => {
           fontFamily: "sans-serif",
         }}
       >
-        Air Tight Containers
+        FootWear
       </h1>
       <Box mb="6">
         <span
@@ -52,7 +51,7 @@ const Footwear = () => {
           height="19px"
           style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
         >
-          Kitchan Ware
+          FootWear
         </span>
       </Box>
     </div>
@@ -60,12 +59,12 @@ const Footwear = () => {
       <div id="grid">
         {data.map((item) =>{
             return(
-              <RouterLink to={item.path}>
+             
               <div className="modulebox">
                 <Image src={item.image} style={{height:"100%",margin:"auto"}} />
                 <h3>{item.title}</h3>
               </div>
-              </RouterLink>
+              
             )
           })}
       </div>

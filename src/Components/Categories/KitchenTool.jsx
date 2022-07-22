@@ -3,6 +3,7 @@ import axios from "axios";
 import Contains from "./Contains";
 import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
+import {Link as RouterLink} from "react-router-dom"
 import { Box } from "@chakra-ui/react";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
@@ -27,7 +28,7 @@ const KitchenTool = () => {
 
   return (
     <div>
-      <div>
+      <div style={{textAlign:"center"}}>
         <h1
           style={{
             fontWeight: "500",
@@ -75,7 +76,7 @@ const KitchenTool = () => {
           {data.map((item) =>{
             if(item.type === "Kitchentool"){
               return(
-                <Contains key={item.id} data={item} />
+                <RouterLink to={`/${item.type}/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
               )
             } 
             })}

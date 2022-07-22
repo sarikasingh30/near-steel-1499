@@ -25,7 +25,7 @@ const KitchenWares = () => {
     ];
   return (
     <div>
-    <div>
+    <div style={{textAlign:"center"}}>
       <h1
         style={{
           fontWeight: "500",
@@ -64,12 +64,11 @@ const KitchenWares = () => {
       <div id="grid">
         {data.map((item) =>{
             return(
-              <RouterLink to={item.path}>
+              
               <div className="modulebox">
                 <Image src={item.image} style={{height:"100%",margin:"auto"}} />
                 <h3>{item.title}</h3>
               </div>
-              </RouterLink>
             )
           })}
       </div>
