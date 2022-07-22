@@ -29,6 +29,7 @@ const ChappalSlippers = () => {
   return (
     <div>
       <div style={{textAlign:"center"}}>
+
         <h1
           style={{
             fontWeight: "500",
@@ -74,13 +75,7 @@ const ChappalSlippers = () => {
             } 
             })}
         </div>
-        <div id="filter" style={{ textAlign: "left", padding: "15px" }}>
-          <label style={{ marginTop: "15px", fontWeight: "bold" }}>
-            By Clouser
-          </label>
-          <br />
-          <input  type="checkbox"/> SLIP ON (9)
-        </div>
+        <div id="filter"></div>
       </div>
     </div>
   );

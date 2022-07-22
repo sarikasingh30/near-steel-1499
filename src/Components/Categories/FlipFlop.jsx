@@ -29,7 +29,6 @@ const FlipFlop = () => {
 
   return (
     <div>
-      <Navbar />
       <div>
         <h1
           style={{
@@ -75,15 +74,8 @@ const FlipFlop = () => {
             } 
             })}
         </div>
-        <div id="filter" style={{ textAlign: "left", padding: "15px" }}>
-          <label style={{ marginTop: "15px", fontWeight: "bold" }}>
-            By Clouser
-          </label>
-          <br />
-          <input  type="checkbox"/> SLIP ON (9)
-        </div>
+        <div id="filter"></div>
       </div>
-      <Footer/>
     </div>
   );
 };

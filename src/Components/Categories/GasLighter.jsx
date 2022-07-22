@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Contains from "./Contains";
 import "./Contains.css";
-import {Link as RouterLink} from "react-router-dom"
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
-const CasualSandals = () => { 
+const GasLighter = () => { 
 
   const dispatch = useDispatch();
   const data = useSelector(store=>store.AppReducer.products);
@@ -27,8 +28,8 @@ const CasualSandals = () => {
 
 
   return (
-    <>
-      <div style={{textAlign:"center"}}>
+    <div>
+      <div>
         <h1
           style={{
             fontWeight: "500",
@@ -38,7 +39,7 @@ const CasualSandals = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Casual Sandals
+          Gas Lighters
         </h1>
         <Box mb="6">
           <span
@@ -54,30 +55,37 @@ const CasualSandals = () => {
           >
             Products
           </span>
+          
           <ArrowRightIcon height="6px" />
           <span
             height="19px"
             style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
           >
-            Casual Sandals
+            Kitchen Ware
+          </span>
+          <ArrowRightIcon height="6px" />
+          <span
+            height="19px"
+            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
+          >
+            Gas Lighters
           </span>
         </Box>
       </div>
       <div id="base">
         <div id="grid">
           {data.map((item) =>{
-            if(item.type === "casualSandal"){
+            if(item.type === "gaslighter"){
               return(
-                <RouterLink to={`/${item.type}/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
+                <Contains key={item.id} data={item} />
               )
             } 
             })}
         </div>
         <div id="filter"></div>
       </div>
-    
-    </>
+    </div>
   );
 };
 
-export default CasualSandals;
+export default GasLighter;
