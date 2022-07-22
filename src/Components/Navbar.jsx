@@ -8,7 +8,6 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { Link as RouterLink } from "react-router-dom";
 //import { VscTriangleDown } from "react-icons/vsc";
 
-
 const Navbar = () => {
   return (
     <div className="navbar">
