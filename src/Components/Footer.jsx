@@ -8,11 +8,13 @@ const Footer = () => {
     <>
       <div className="home">
         <div className="text">
+
           <div className="textbig">
             The Ultimate Domestic Online Shopping Experience Platform in India
           </div>
           <div className="textp">
             <p>
+
               Online shopping with Uboric is quick, convenient and trouble-free.
               You can shop for the desired product right from the comfort of
               your home and get them delivered straight to your doorstep. Uboric
@@ -44,6 +46,7 @@ const Footer = () => {
 
       <div>
         <h1>What Our Customer Says</h1>
+        <h1>hi updated</h1>
       </div>
       <div className="Footer">
         <div>
