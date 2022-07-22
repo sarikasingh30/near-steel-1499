@@ -38,12 +38,13 @@ const Navbar = () => {
             />
           </div>
           <div className="iconsDiv">
-            <div className="second">
+          <RouterLink to={isAuth === false ? "/login" : "/myaccount"}><div className="second">
               <MdAccountCircle size="35px" />
-            </div>
-            <div className="third">
+            </div></RouterLink>
+            <RouterLink to="/cart"><div className="third">
               <FaCartPlus size="35px" />
             </div>
+            </RouterLink>
             <div className="CartCount">
               <p>(0)</p>
             </div>

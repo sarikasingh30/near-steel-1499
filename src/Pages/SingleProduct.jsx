@@ -48,8 +48,8 @@ const SingleProduct = () => {
 
   useEffect(() => {
     if (path&&id) {
-      const temp = data?.find((item) => {
-        if (item.type === path && item.id.toString() ===(id)) {
+      const temp = data.find((item) => {
+        if (item.type ==path && item.id===Number(id)) {
           return item;
         }
       });
