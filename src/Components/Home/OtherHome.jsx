@@ -8,6 +8,7 @@ import {
   Heading,
   HStack,
 } from "@chakra-ui/react";
+
 import styles from "./style.module.css";
 import { NavLink } from "react-router-dom";
 
