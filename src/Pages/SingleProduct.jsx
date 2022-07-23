@@ -14,7 +14,7 @@ import {
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams,useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { ArrowRightIcon, InfoOutlineIcon } from "@chakra-ui/icons";
 import {
   FaHeadphones,
@@ -30,33 +30,33 @@ import {
   addCartData,
   getCartData,
 } from "../Redux/AppReducer/action";
-import {v4 as uuid} from "uuid"
+import { v4 as uuid } from "uuid";
 const SingleProduct = () => {
   const data = useSelector((store) => store.AppReducer.products);
   const cartdata = useSelector((store) => store.AppReducer.cart);
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const dispatch = useDispatch();
-  const {id}= useParams();
+  const { id } = useParams();
   const [product, setProduct] = useState({});
   // add to cart button functionality
-  const addToCart=(x)=>{
+  const addToCart = (x) => {
     // let y={...x,_id:uuid()}
-    
+
     // dispatch(addCartData(x))
-    let newCartdata=cartdata.filter((item)=>{if(item.id===x.id){
-
-      return {...item,"count":item.count+1}
-    }else{
-      return x
-    }})
-  console.log(newCartdata)
-
-}
-// buy now button functionality
-const buyNow=(product)=>{
-      dispatch(addCartData(product));
-      navigate("/cart")
-}
+    let newCartdata = cartdata.filter((item) => {
+      if (item.id === x.id) {
+        return { ...item, count: item.count + 1 };
+      } else {
+        return x;
+      }
+    });
+    console.log(newCartdata);
+  };
+  // buy now button functionality
+  const buyNow = (product) => {
+    dispatch(addCartData(product));
+    navigate("/cart");
+  };
   const dataAction = () => {
     const request = dispatch(getDataRequest());
     axios
@@ -64,17 +64,19 @@ const buyNow=(product)=>{
       .then((r) => dispatch(getDataSuccess(r.data)))
       .catch((e) => dispatch(getDataFailure()));
   };
-  
+
   useEffect(() => {
     dataAction();
-    if(cartdata.length==0){dispatch(getCartData())}
+    if (cartdata.length == 0) {
+      dispatch(getCartData());
+    }
   }, []);
   useEffect(() => {
-    if(id){
-      const temp=data.find((item)=>item.id===Number(id))
-       temp && setProduct(temp)
+    if (id) {
+      const temp = data.find((item) => item.id === Number(id));
+      temp && setProduct(temp);
     }
-  }, [id,data]);
+  }, [id, data]);
   return (
     <Box>
       <Box
@@ -122,10 +124,18 @@ const buyNow=(product)=>{
         </Flex>
       </Box>
       <Flex
-        direction={{base:"column", xl: "row", lg: "row", md: "column", sm: "column" }}
+        direction={{
+          base: "column",
+          xl: "row",
+          lg: "row",
+          md: "column",
+          sm: "column",
+        }}
         mt="5%"
       >
-        <Box width={{ md: "99%", xl: "45%", lg: "45%", sm: "99%", base:"99%"}}>
+        <Box
+          width={{ md: "99%", xl: "45%", lg: "45%", sm: "99%", base: "99%" }}
+        >
           <Flex direction="column">
             <Image
               src={product.image2}
@@ -166,7 +176,9 @@ const buyNow=(product)=>{
             </Flex>
           </Flex>
         </Box>
-        <Box width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%" ,base:"99%" }}>
+        <Box
+          width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%", base: "99%" }}
+        >
           <Flex direction="column">
             <Heading
               style={{
@@ -212,7 +224,7 @@ const buyNow=(product)=>{
               <Text textAlign="start" fontWeight="600">
                 Size:
               </Text>
-              
+
               <Select
                 variant="outline"
                 placeholder="Choose an option"
@@ -237,7 +249,7 @@ const buyNow=(product)=>{
                 height="50px"
                 mt="3"
                 borderRadius="4"
-                onClick={()=>buyNow(product)}
+                onClick={() => buyNow(product)}
               >
                 BUY NOW
               </Button>
@@ -258,7 +270,7 @@ const buyNow=(product)=>{
                 mt="3"
                 ml="2"
                 borderRadius="4"
-                onClick={()=>addToCart(product)}
+                onClick={() => addToCart(product)}
               >
                 ADD TO CART
               </Button>
@@ -366,18 +378,38 @@ const buyNow=(product)=>{
       </Flex>
       <Box width="100%" mt="5%" mb="3%">
         <Heading textAlign="center">Related Products</Heading>
-       
+
         <SimpleGrid
           columns={{ xl: 4, lg: 2, md: 2, sm: 1 }}
-          spacing="20px" width="90%" ml="5%"
+          spacing="20px"
+          width="90%"
+          ml="5%"
         >
-           {data.splice(id,4).map((e)=>{
-              return( <Box key={e.id} borderRadius="5%" boxShadow='2xl' p='6' rounded='md' bg='white'>
-                      <Image src={e.image1} width="95%" height="60%" ml="5%"/>
-                      <Text textAlign="center" fontSize="20px" lineHeight="25px">{e.name}</Text>
-                      <Text mt="3%" textAlign="center" fontSize="15px" lineHeight="20px">₹ {e.cost}  (Inclusive of all Taxes)</Text>
-              </Box>)
-        })}
+          {data.splice(id, 4).map((e) => {
+            return (
+              <Box
+                key={e.id}
+                borderRadius="5%"
+                boxShadow="2xl"
+                p="6"
+                rounded="md"
+                bg="white"
+              >
+                <Image src={e.image1} width="95%" height="60%" ml="5%" />
+                <Text textAlign="center" fontSize="20px" lineHeight="25px">
+                  {e.name}
+                </Text>
+                <Text
+                  mt="3%"
+                  textAlign="center"
+                  fontSize="15px"
+                  lineHeight="20px"
+                >
+                  ₹ {e.cost} (Inclusive of all Taxes)
+                </Text>
+              </Box>
+            );
+          })}
         </SimpleGrid>
       </Box>
     </Box>
