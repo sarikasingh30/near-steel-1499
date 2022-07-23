@@ -1297,7 +1297,7 @@
       "image4": "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0574_result.jpg",
       "cost": 675,
       "slipon": false,
-      "count": 1,
+      "count": 3,
       "size6": true,
       "size7": true,
       "size8": true,
@@ -1371,6 +1371,16 @@
       "size9": true,
       "size10": true,
       "type": "casualSandal"
+    },
+    {
+      "id": 68,
+      "name": "PACK OF 2 yellow Stainless Steel Regular Gas Lighter for Kitchen Stove",
+      "name1": "PACK OF 2 yellow Stainless Steel Regular Gas Lighter...",
+      "image1": "https://www.uboric.com/wp-content/uploads/2020/09/GL-11-100x100.png",
+      "image2": "https://www.uboric.com/wp-content/uploads/2020/09/41ImeQsFhAL.jpg",
+      "cost": 199,
+      "count": 3,
+      "type": "gaslighter"
     }
   ]
 }
