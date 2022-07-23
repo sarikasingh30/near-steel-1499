@@ -41,13 +41,13 @@ const MainRoutes = () => {
         <Route path="/product-category/Kitchenware-Tools" element={<KitchenTool/>} />
         <Route path="/product-category/Mensfootwear" element={<MensFootwear/>} />
         <Route path="/product-category/footwear" element={<Footwear/>} />
-          <Route path="/:path/:id" element={<SingleProduct/>}/>
-        <Route path="/cart" element={<Cart />} />
+          <Route path="/product-category/:id" element={<SingleProduct/>}/>
+        <Route path="/cart" element={<Cart/>} />
         <Route path="/*" element={<NotFound/>}/>
 
         {/* <Route path="/casual-slippers/:id" element={<SingleProduct/>}/> */}
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
 
     </>
   );

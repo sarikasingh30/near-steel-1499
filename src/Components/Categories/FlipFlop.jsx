@@ -4,8 +4,7 @@ import Contains from "./Contains";
 import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+import {Link as RouterLink} from "react-router-dom"
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
 const FlipFlop = () => { 
@@ -69,7 +68,7 @@ const FlipFlop = () => {
           {data.map((item) =>{
             if(item.type === "flipflop"){
               return(
-                <Contains key={item.id} data={item} />
+                <RouterLink to={`/product-category/${item.id}`}><Contains key={item.id} data={item} /></RouterLink>
               )
             } 
             })}
