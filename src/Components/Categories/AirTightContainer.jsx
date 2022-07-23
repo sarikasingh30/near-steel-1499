@@ -5,7 +5,7 @@ import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
 
-import { Link as RouterLink } from "react-router-dom";
+
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
 const AirTightContainer = () => { 
@@ -74,7 +74,9 @@ const AirTightContainer = () => {
           {data.map((item) =>{
             if(item.type ==="airTight"){
               return(
-                <RouterLink to={`/product-category/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
+
+                <Contains key={item.id} data={item} />
+
               )
             } 
             })}

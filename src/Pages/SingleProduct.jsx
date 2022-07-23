@@ -10,6 +10,7 @@ import {
   Button,
   UnorderedList,
   ListItem,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -29,6 +30,7 @@ import {
   getDataFailure,
   addCartData,
   getCartData,
+  updateCartData,
 } from "../Redux/AppReducer/action";
 import { v4 as uuid } from "uuid";
 const SingleProduct = () => {
@@ -36,27 +38,40 @@ const SingleProduct = () => {
   const cartdata = useSelector((store) => store.AppReducer.cart);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const toast = useToast();
+
   const { id } = useParams();
   const [product, setProduct] = useState({});
+
   // add to cart button functionality
   const addToCart = (x) => {
-    // let y={...x,_id:uuid()}
-
-    // dispatch(addCartData(x))
-    let newCartdata = cartdata.filter((item) => {
-      if (item.id === x.id) {
-        return { ...item, count: item.count + 1 };
-      } else {
-        return x;
-      }
+    const check_index = cartdata.findIndex((item) => item.id === x.id);
+    if (check_index !== -1) {
+      cartdata[check_index].count++;
+      dispatch(updateCartData(x.id, cartdata[check_index].count));
+    } else {
+      dispatch(addCartData(x));
+    }
+    toast({
+      title: "Your item is added to cart.",
+      description: "Checkout the cart.",
+      status: "success",
+      duration: 2000,
+      isClosable: true,
     });
-    console.log(newCartdata);
   };
   // buy now button functionality
-  const buyNow = (product) => {
-    dispatch(addCartData(product));
+  const buyNow = (x) => {
+    const check_index = cartdata.findIndex((item) => item.id === x.id);
+    if (check_index !== -1) {
+      cartdata[check_index].count++;
+      dispatch(updateCartData(x.id, cartdata[check_index].count));
+    } else {
+      dispatch(addCartData(x));
+    }
     navigate("/cart");
   };
+
   const dataAction = () => {
     const request = dispatch(getDataRequest());
     axios
@@ -64,7 +79,6 @@ const SingleProduct = () => {
       .then((r) => dispatch(getDataSuccess(r.data)))
       .catch((e) => dispatch(getDataFailure()));
   };
-
   useEffect(() => {
     dataAction();
     if (cartdata.length == 0) {
@@ -77,6 +91,7 @@ const SingleProduct = () => {
       temp && setProduct(temp);
     }
   }, [id, data]);
+
   return (
     <Box>
       <Box
@@ -123,6 +138,7 @@ const SingleProduct = () => {
           </Box>
         </Flex>
       </Box>
+
       <Flex
         direction={{
           base: "column",
@@ -131,6 +147,7 @@ const SingleProduct = () => {
           md: "column",
           sm: "column",
         }}
+        // direction={{base:"column", xl: "row", lg: "row", md: "column", sm: "column" }}
         mt="5%"
       >
         <Box
@@ -176,6 +193,10 @@ const SingleProduct = () => {
             </Flex>
           </Flex>
         </Box>
+        {/* <Box
+          width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%", base: "99%" }}
+        > */}
+
         <Box
           width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%", base: "99%" }}
         >
@@ -224,7 +245,6 @@ const SingleProduct = () => {
               <Text textAlign="start" fontWeight="600">
                 Size:
               </Text>
-
               <Select
                 variant="outline"
                 placeholder="Choose an option"
@@ -376,6 +396,7 @@ const SingleProduct = () => {
           </UnorderedList>
         </Box>
       </Flex>
+
       <Box width="100%" mt="5%" mb="3%">
         <Heading textAlign="center">Related Products</Heading>
 

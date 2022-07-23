@@ -12,21 +12,21 @@ import {
   Text,
   useToast,
 } from "@chakra-ui/react";
-import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 import Register from "../Components/Register";
 import { useDispatch, useSelector } from "react-redux";
 import { checkUser } from "../Redux/AuthReducer/action";
 import { saveLocalData } from "../Utils/localStorage";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 
 const Login = () => {
   const users = useSelector((state) => state.AuthReducer.userData);
+  const isAuth = useSelector((store) => store.AuthReducer.isAuth);
   const dispatch = useDispatch();
   const toast = useToast();
   const navigate = useNavigate();
+  const { state } = useLocation();
 
   const [loginEamil, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
@@ -59,11 +59,12 @@ const Login = () => {
         isClosable: true,
       });
     }
-
+    const comingFrom = state?.from?.pathname || "/myaccount";
     // console.log(currentUser.token);
     saveLocalData("token", currentUser.token);
-    navigate("/myaccount");
+    navigate(comingFrom, { replace: true });
   };
+
   return (
     <Box p="1rem 0 0 0">
       <Container p="0.5rem" color="#1e516c">
@@ -72,6 +73,7 @@ const Login = () => {
           mb="0.4rem"
           letterSpacing="2px"
           fontWeight={500}
+          textAlign="center"
         >
           My account
         </Heading>

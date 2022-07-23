@@ -70,7 +70,7 @@ const ChappalSlippers = () => {
           {data.map((item) =>{
             if(item.type === "casualSlipper" || item.type === "chappal"){
               return(
-                <RouterLink to={`/product-category/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
+                <RouterLink to={`/${item.type}/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
               )
             } 
             })}
