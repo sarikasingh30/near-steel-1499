@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import { FaCartPlus } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -10,6 +10,7 @@ import { Link as RouterLink } from "react-router-dom";
 //import { VscTriangleDown } from "react-icons/vsc";
 import { useSelector,useDispatch } from "react-redux";
 import { getCartData } from "../Redux/AppReducer/action";
+
 const Navbar = () => {
   const cart = useSelector((store) => store.AppReducer.cart);
   const isAuth = useSelector((store) => store.AuthReducer.isAuth);
@@ -74,7 +75,7 @@ const Navbar = () => {
             <div className="drop_down_content">
               <div className="content">
                 <h3 className="tag1">
-                  Fashion <ChevronDownIcon />
+                  Fashion <ChevronRightIcon/>
                   <div className="drop_down_content1">
                     <div className="content1">
                       <div className="sub_content">
@@ -116,7 +117,7 @@ const Navbar = () => {
                   </div>
                 </h3>
                 <h3 className="tag1">
-                  Kitchen <ChevronDownIcon />
+                  Kitchen <ChevronRightIcon />
                   <div className="drop_down_content1">
                     <div className="content1">
                       <div className="sub_content">
@@ -140,7 +141,7 @@ const Navbar = () => {
                   </div>
                 </h3>
                 <h3 className="tag1">
-                  Accessories <ChevronDownIcon />
+                  Accessories <ChevronRightIcon />
                   <div className="drop_down_content1">
                     <div className="content1">
                       <div className="sub_content">
@@ -158,7 +159,7 @@ const Navbar = () => {
                   </div>
                 </h3>
                 <h3 className="tag1">
-                  Health & Personal Care <ChevronDownIcon />
+                  Health & Personal Care <ChevronRightIcon />
                   <div className="drop_down_content1">
                     <div className="content1">
                       <div className="sub_content">
@@ -183,10 +184,10 @@ const Navbar = () => {
                   </div>
                 </h3>
                 <h3 className="tag1">
-                  Electronics <ChevronDownIcon />
+                  Electronics <ChevronRightIcon />
                 </h3>
                 <h3 className="tag1">
-                  Electric Appliances <ChevronDownIcon />
+                  Electric Appliances <ChevronRightIcon />
                   <div className="drop_down_content1">
                     <div className="content1">
                       <div className="sub_content">
@@ -212,10 +213,10 @@ const Navbar = () => {
                   </div>
                 </h3>
                 <h3 className="tag1">
-                  Paintings <ChevronDownIcon />
+                  Paintings <ChevronRightIcon />
                 </h3>
                 <h3 className="tag2">
-                  Anti Puncture Liquid <ChevronDownIcon />
+                  Anti Puncture Liquid <ChevronRightIcon />
                 </h3>
               </div>
             </div>

@@ -25,6 +25,9 @@ import NotFound from "./NotFound";
 import RequireAuth from "../hoc/RequireAuth";
 import CheckOut from "./CheckOut";
 
+// import { Checkout } from "./CheckOut";
+
+
 const MainRoutes = () => {
   return (
     <>
@@ -57,7 +60,6 @@ const MainRoutes = () => {
           path="/product-category/casual-partyshoes"
           element={<CasualPartyShoes />}
         />
-
         <Route path="/product-category/FlipFlops" element={<FlipFlop />} />
         <Route
           path="/product-category/airTight"
@@ -91,8 +93,6 @@ const MainRoutes = () => {
           }
         />
         <Route path="/*" element={<NotFound />} />
-
-        {/* <Route path="/casual-slippers/:id" element={<SingleProduct/>}/> */}
       </Routes>
       <Footer />
     </>

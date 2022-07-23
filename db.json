@@ -1278,7 +1278,7 @@
       "image4": "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0574_result.jpg",
       "cost": 675,
       "slipon": false,
-      "count": 1,
+      "count": 3,
       "size6": true,
       "size7": true,
       "size8": true,
@@ -1286,25 +1286,7 @@
       "size10": true,
       "size11": false,
       "type": "casualSlipper"
-    },
-    {
-      "id": 4,
-      "name": "ADDA MEN’S CHAPPLE / SLIPPERS IN COLOUR ORANG/NAVY",
-      "name1": "ADDA MEN’S CHAPPLE / SLIPPERS IN...",
-      "image1": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0807_result.jpg",
-      "image2": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0808_result.jpg",
-      "image3": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0809_result.jpg",
-      "image4": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0810_result.jpg",
-      "cost": 699,
-      "slipon": false,
-      "count": 1,
-      "size6": true,
-      "size7": true,
-      "size8": true,
-      "size9": false,
-      "size10": true,
-      "size11": false,
-      "type": "casualSlipper"
     }
+
   ]
 }
