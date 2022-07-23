@@ -67,6 +67,27 @@ const reducer=(state=initialState,action)=>{
                 isLoading:false,
                 isError:true
               }
+              case types.UPDATE_CARTDATA_REQUEST:
+                return{
+                  ...state,
+                  isLoading:true,
+                  isError:false
+                }
+              case types.UPDATE_CARTDATA_SUCCESS:{
+                let newcart=state.cart.map((item)=>item.id===payload.id?payload:item)
+                return{
+                  ...state,
+                  cart:newcart,
+                  isLoading:false,
+                  isError:false
+                }
+              }
+              case types.UPDATE_CARTDATA_FAILURE:
+                return{
+                  ...state,
+                  isLoading:false,
+                  isError:true
+                }
         default:
             return state;
     }

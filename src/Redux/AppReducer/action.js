@@ -23,3 +23,10 @@ export const addCartData=(payload)=>dispatch=>{
     .then((r)=>dispatch({type:types.ADD_CARTDATA_SUCCESS,payload:r.data}))
     .catch((err)=>dispatch({type:types.ADD_CARTDATA_FAILURE,payload:err}))
 }
+
+export const updateCartData=(id,newCount)=>dispatch=>{
+    dispatch({type:types.UPDATE_CARTDATA_REQUEST})
+    axios.patch(`http://localhost:8080/cart/${id}`,{count:newCount})
+    .then((r)=>dispatch({type:types.UPDATE_CARTDATA_SUCCESS,payload:r.data}))
+    .catch((err)=>dispatch({type:types.UPDATE_CARTDATA_FAILURE,payload:err}))
+}

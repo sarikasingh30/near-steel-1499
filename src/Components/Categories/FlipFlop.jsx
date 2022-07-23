@@ -68,7 +68,7 @@ const FlipFlop = () => {
           {data.map((item) =>{
             if(item.type === "flipflop"){
               return(
-                <RouterLink to={`/product-category/${item.id}`}><Contains key={item.id} data={item} /></RouterLink>
+               <Contains key={item.id} data={item} />
               )
             } 
             })}

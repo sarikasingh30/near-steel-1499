@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
 import { ChevronDownIcon } from "@chakra-ui/icons";
@@ -8,10 +8,19 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { Link as RouterLink } from "react-router-dom";
 
 //import { VscTriangleDown } from "react-icons/vsc";
-import { useSelector } from "react-redux";
+import { useSelector,useDispatch } from "react-redux";
+import { getCartData } from "../Redux/AppReducer/action";
 const Navbar = () => {
   const cart = useSelector((store) => store.AppReducer.cart);
   const isAuth = useSelector((store) => store.AuthReducer.isAuth);
+  const dispatch=useDispatch()
+  const totalCount = cart
+  ?.map((item) =>  item.count)
+  .reduce((prev, curr) => prev + curr, 0);
+  
+  useEffect(()=>{
+    dispatch(getCartData())
+  },[])
   return (
     <div className="navbar" >
       <div className="first_row" >
@@ -47,7 +56,7 @@ const Navbar = () => {
             </div>
             
             <div className="CartCount">
-              <p>({cart.length})</p>
+              <p>({totalCount})</p>
             </div>
           </div>
         </div>

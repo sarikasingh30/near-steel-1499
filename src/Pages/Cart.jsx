@@ -15,7 +15,7 @@ const Cart = () => {
   useEffect(()=>{
       dispatch(getCartData())
   },[])
-  console.log(cart)
+  // console.log(cart)
   // const products = [
   //   {
   //     name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
