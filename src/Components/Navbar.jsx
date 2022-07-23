@@ -10,6 +10,7 @@ import { Link as RouterLink } from "react-router-dom";
 //import { VscTriangleDown } from "react-icons/vsc";
 import { useSelector } from "react-redux";
 const Navbar = () => {
+  const cart = useSelector((store) => store.AppReducer.cart);
   const isAuth = useSelector((store) => store.AuthReducer.isAuth);
   return (
     <div className="navbar" >
@@ -38,15 +39,15 @@ const Navbar = () => {
             />
           </div>
           <div className="iconsDiv">
-          <RouterLink to={isAuth === false ? "/login" : "/myaccount"}><div className="second">
-              <MdAccountCircle size="35px" />
-            </div></RouterLink>
-            <RouterLink to="/cart"><div className="third">
-              <FaCartPlus size="35px" />
+          <div className="second">
+          <RouterLink to={isAuth === false ? "/login" : "/myaccount"}><MdAccountCircle size="35px" /></RouterLink>
             </div>
-            </RouterLink>
+            <div className="third">
+            <RouterLink to="/cart"><FaCartPlus size="35px" /></RouterLink>
+            </div>
+            
             <div className="CartCount">
-              <p>(0)</p>
+              <p>({cart.length})</p>
             </div>
           </div>
         </div>
@@ -71,7 +72,7 @@ const Navbar = () => {
 
                           <b><RouterLink to="/product-category/footwear"><p className="wear1">Foot Wear</p></RouterLink></b>
                           <b><RouterLink to="/product-category/Mensfootwear"><p className="wear1">Men's footwear</p></RouterLink></b>
-                          <RouterLink to="/product-category/casual-slippers"><p className="wear1">Casual Chapple/Slippers</p></RouterLink>
+                          <RouterLink to="/product-category/casualslippers"><p className="wear1">Casual Chapple/Slippers</p></RouterLink>
                           <RouterLink to="/product-category/casual-sandals"><p className="wear1">Casual Sandals</p></RouterLink>
                           <RouterLink to="/product-category/casual-partyshoes"><p className="wear1">Casual/Party Shoes</p></RouterLink>
                           <RouterLink to="/product-category/chappal-slippers"><p className="wear1">Chappal/Slippers</p></RouterLink>

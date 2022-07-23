@@ -67,7 +67,7 @@ const CasualPartyShoes = () => {
           {data.map((item) =>{
             if(item.type === "casualShoe"){
               return(
-                <RouterLink to={`/${item.type}/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
+                <RouterLink to={`/product-category/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
               )
             } 
             })}

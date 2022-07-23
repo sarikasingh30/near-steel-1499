@@ -1,50 +1,58 @@
 import { Box, Button, Container, Flex, Heading, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { Link as RouterLink } from "react-router-dom";
 import BigScreenCartTable from "../Components/BigScreenCartTable";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import SmallScreenCartTable from "../Components/SmallScreenCartTable";
 import styles from "./Cart.module.css";
+import { getCartData } from "../Redux/AppReducer/action";
+import { useSelector,useDispatch } from "react-redux";
 
 const Cart = () => {
-  const products = [
-    {
-      name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
-      id: 1,
-      price: 670,
-      quantity: 1,
-      image:
-        "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result-400x265.jpg",
-    },
-    {
-      name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
-      id: 2,
-      price: 570,
-      quantity: 1,
-      image:
-        "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result-400x265.jpg",
-    },
-    {
-      name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
-      id: 3,
-      price: 770,
-      quantity: 1,
-      image:
-        "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result-400x265.jpg",
-    },
-    {
-      name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
-      id: 4,
-      price: 680,
-      quantity: 1,
-      image:
-        "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result-400x265.jpg",
-    },
-  ];
+  const cart=useSelector(store=>store.AppReducer.cart)
+  const dispatch=useDispatch()
+  useEffect(()=>{
+      dispatch(getCartData())
+  },[])
+  console.log(cart)
+  // const products = [
+  //   {
+  //     name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
+  //     id: 1,
+  //     price: 670,
+  //     quantity: 1,
+  //     image:
+  //       "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result-400x265.jpg",
+  //   },
+  //   {
+  //     name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
+  //     id: 2,
+  //     price: 570,
+  //     quantity: 1,
+  //     image:
+  //       "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result-400x265.jpg",
+  //   },
+  //   {
+  //     name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
+  //     id: 3,
+  //     price: 770,
+  //     quantity: 1,
+  //     image:
+  //       "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result-400x265.jpg",
+  //   },
+  //   {
+  //     name: "ADDA MEN'S CHAPPLE / SLIPPERS IN COLOUR BLACK - 7",
+  //     id: 4,
+  //     price: 680,
+  //     quantity: 1,
+  //     image:
+  //       "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result-400x265.jpg",
+  //   },
+  // ];
 
-  const totlaPrice = products
-    ?.map((item) => item.price * item.quantity)
+  const totlaPrice = cart
+    ?.map((item) => item.cost * item.count)
     .reduce((prev, curr) => prev + curr, 0);
 
   return (
@@ -55,6 +63,7 @@ const Cart = () => {
           mb="0.4rem"
           letterSpacing="2px"
           fontWeight={500}
+          textAlign="center"
         >
           Cart
         </Heading>
@@ -98,7 +107,7 @@ const Cart = () => {
             xl: "inline-block",
           }}
         >
-          <BigScreenCartTable products={products} />
+          <BigScreenCartTable products={cart} />
         </Box>
 
         {/* cart box */}
@@ -148,7 +157,7 @@ const Cart = () => {
           xl: "none",
         }}
       >
-        <SmallScreenCartTable products={products} />
+        <SmallScreenCartTable products={cart} />
         <Box
           bg="#fafafa"
           w={{ md: "100%", lg: "30%", xl: "30%" }}

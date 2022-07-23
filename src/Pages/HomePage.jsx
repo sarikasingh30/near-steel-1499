@@ -1,11 +1,7 @@
 import React from "react";
-import CasualPartyShoes from "../Components/Categories/CasualPartyShoes";
-import CasualSandals from "../Components/Categories/CasualSandals";
-import CasualSlippers from "../Components/Categories/CasualSlippers";
-import ChappalSlippers from "../Components/Categories/ChappalSlippers";
-import FlipFlop from "../Components/Categories/FlipFlop";
 
-import HomeTopSliding from "../Components/Home/HomeTopSliding";
+
+import HomeTopSliding from "./HomeTopSliding";
 import Kitchen from "../Components/Home/Kitchen";
 import Support from "../Components/Home/Support";
 import OtherHome from "../Components/Home/OtherHome";
@@ -19,7 +15,7 @@ import FootwearHeading from "../Components/Home/FootwearHeading";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <HomeTopSliding />
       <Kitchen />
       <Support />
@@ -30,7 +26,7 @@ const HomePage = () => {
       <Spices />
       <FootwearHeading />
       <Footwear />
-    </div>
+    </>
   );
 };
 
