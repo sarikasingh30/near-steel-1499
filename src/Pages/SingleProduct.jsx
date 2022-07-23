@@ -10,13 +10,12 @@ import {
   Button,
   UnorderedList,
   ListItem,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-
-import { useParams,useNavigate } from "react-router-dom";
-
+import { useParams, useNavigate } from "react-router-dom";
 import { ArrowRightIcon, InfoOutlineIcon } from "@chakra-ui/icons";
 import {
   FaHeadphones,
@@ -29,41 +28,49 @@ import {
   getDataRequest,
   getDataSuccess,
   getDataFailure,
-
   addCartData,
   getCartData,
   updateCartData,
 } from "../Redux/AppReducer/action";
-import {v4 as uuid} from "uuid"
+import { v4 as uuid } from "uuid";
 const SingleProduct = () => {
   const data = useSelector((store) => store.AppReducer.products);
   const cartdata = useSelector((store) => store.AppReducer.cart);
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const dispatch = useDispatch();
-  const {id}= useParams();
-  const [product, setProduct] = useState({});
-  // add to cart button functionality
-  const addToCart=(x)=>{
-  const check_index = cartdata.findIndex(item => item.id === x.id);
-  if (check_index !== -1) {
-    cartdata[check_index].count++;
-    dispatch(updateCartData(x.id,cartdata[check_index].count))
-  } else {
-    dispatch(addCartData(x))
-  }
+  const toast = useToast();
 
-}
-// buy now button functionality
-const buyNow=(x)=>{
-  const check_index = cartdata.findIndex(item => item.id === x.id);
-  if (check_index !== -1) {
-    cartdata[check_index].count++;
-    dispatch(updateCartData(x.id,cartdata[check_index].count))
-  } else {
-    dispatch(addCartData(x))
-  }
-      navigate("/cart")
-}
+  const { id } = useParams();
+  const [product, setProduct] = useState({});
+
+  // add to cart button functionality
+  const addToCart = (x) => {
+    const check_index = cartdata.findIndex((item) => item.id === x.id);
+    if (check_index !== -1) {
+      cartdata[check_index].count++;
+      dispatch(updateCartData(x.id, cartdata[check_index].count));
+    } else {
+      dispatch(addCartData(x));
+    }
+    toast({
+      title: "Your item is added to cart.",
+      description: "Checkout the cart.",
+      status: "success",
+      duration: 2000,
+      isClosable: true,
+    });
+  };
+  // buy now button functionality
+  const buyNow = (x) => {
+    const check_index = cartdata.findIndex((item) => item.id === x.id);
+    if (check_index !== -1) {
+      cartdata[check_index].count++;
+      dispatch(updateCartData(x.id, cartdata[check_index].count));
+    } else {
+      dispatch(addCartData(x));
+    }
+    navigate("/cart");
+  };
 
   const dataAction = () => {
     const request = dispatch(getDataRequest());
@@ -72,18 +79,18 @@ const buyNow=(x)=>{
       .then((r) => dispatch(getDataSuccess(r.data)))
       .catch((e) => dispatch(getDataFailure()));
   };
-
-  
   useEffect(() => {
     dataAction();
-    if(cartdata.length==0){dispatch(getCartData())}
+    if (cartdata.length == 0) {
+      dispatch(getCartData());
+    }
   }, []);
   useEffect(() => {
-    if(id){
-      const temp=data.find((item)=>item.id===Number(id))
-       temp && setProduct(temp)
+    if (id) {
+      const temp = data.find((item) => item.id === Number(id));
+      temp && setProduct(temp);
     }
-  }, [id,data]);
+  }, [id, data]);
 
   return (
     <Box>
@@ -131,12 +138,21 @@ const buyNow=(x)=>{
           </Box>
         </Flex>
       </Box>
-      <Flex
 
-        direction={{base:"column", xl: "row", lg: "row", md: "column", sm: "column" }}
+      <Flex
+        direction={{
+          base: "column",
+          xl: "row",
+          lg: "row",
+          md: "column",
+          sm: "column",
+        }}
+        // direction={{base:"column", xl: "row", lg: "row", md: "column", sm: "column" }}
         mt="5%"
       >
-        <Box width={{ md: "99%", xl: "45%", lg: "45%", sm: "99%", base:"99%"}}>
+        <Box
+          width={{ md: "99%", xl: "45%", lg: "45%", sm: "99%", base: "99%" }}
+        >
           <Flex direction="column">
             <Image
               src={product.image2}
@@ -144,7 +160,6 @@ const buyNow=(x)=>{
               ml="4%"
               height="350px"
               // _hover={{ ml: "10%" }}
-
             />
             <Flex direction="row" mt="2%">
               <Image
@@ -178,9 +193,13 @@ const buyNow=(x)=>{
             </Flex>
           </Flex>
         </Box>
+        {/* <Box
+          width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%", base: "99%" }}
+        > */}
 
-        <Box width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%" ,base:"99%" }}>
-
+        <Box
+          width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%", base: "99%" }}
+        >
           <Flex direction="column">
             <Heading
               style={{
@@ -204,7 +223,6 @@ const buyNow=(x)=>{
               ml="40%"
             />
 
-
             <Flex direction="row" ml="5" mt="4" justifyContent="space-around">
               <VStack>
                 <FaMoneyBillAlt size="40" />
@@ -227,8 +245,6 @@ const buyNow=(x)=>{
               <Text textAlign="start" fontWeight="600">
                 Size:
               </Text>
-              
-
               <Select
                 variant="outline"
                 placeholder="Choose an option"
@@ -253,9 +269,7 @@ const buyNow=(x)=>{
                 height="50px"
                 mt="3"
                 borderRadius="4"
-
-                onClick={()=>buyNow(product)}
-
+                onClick={() => buyNow(product)}
               >
                 BUY NOW
               </Button>
@@ -276,9 +290,7 @@ const buyNow=(x)=>{
                 mt="3"
                 ml="2"
                 borderRadius="4"
-
-                onClick={()=>addToCart(product)}
-
+                onClick={() => addToCart(product)}
               >
                 ADD TO CART
               </Button>
@@ -384,20 +396,41 @@ const buyNow=(x)=>{
           </UnorderedList>
         </Box>
       </Flex>
+
       <Box width="100%" mt="5%" mb="3%">
         <Heading textAlign="center">Related Products</Heading>
-       
+
         <SimpleGrid
           columns={{ xl: 4, lg: 2, md: 2, sm: 1 }}
-          spacing="20px" width="90%" ml="5%"
+          spacing="20px"
+          width="90%"
+          ml="5%"
         >
-           {data.splice(id,4).map((e)=>{
-              return( <Box key={e.id} borderRadius="5%" boxShadow='2xl' p='6' rounded='md' bg='white'>
-                      <Image src={e.image1} width="95%" height="60%" ml="5%"/>
-                      <Text textAlign="center" fontSize="20px" lineHeight="25px">{e.name}</Text>
-                      <Text mt="3%" textAlign="center" fontSize="15px" lineHeight="20px">₹ {e.cost}  (Inclusive of all Taxes)</Text>
-              </Box>)
-        })}
+          {data.splice(id, 4).map((e) => {
+            return (
+              <Box
+                key={e.id}
+                borderRadius="5%"
+                boxShadow="2xl"
+                p="6"
+                rounded="md"
+                bg="white"
+              >
+                <Image src={e.image1} width="95%" height="60%" ml="5%" />
+                <Text textAlign="center" fontSize="20px" lineHeight="25px">
+                  {e.name}
+                </Text>
+                <Text
+                  mt="3%"
+                  textAlign="center"
+                  fontSize="15px"
+                  lineHeight="20px"
+                >
+                  ₹ {e.cost} (Inclusive of all Taxes)
+                </Text>
+              </Box>
+            );
+          })}
         </SimpleGrid>
       </Box>
     </Box>

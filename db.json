@@ -346,7 +346,7 @@
       "image2": "https://www.uboric.com/wp-content/uploads/2021/01/715Lt83VEHL._UX695_-400x217.png",
       "image3": "https://www.uboric.com/wp-content/uploads/2021/01/71jsXgjEKEL._UL1500_-Copy-400x209.png",
       "image4": "https://www.uboric.com/wp-content/uploads/2021/01/71fBq4eiTaL._UL1500_-Copy-400x153.png",
-      "cost": 1231.68,
+      "cost": 1231,
       "slipon": false,
       "laceup": true,
       "count": 1,
@@ -367,7 +367,7 @@
       "image2": "https://www.uboric.com/wp-content/uploads/2021/01/id2071black-5-id-black-original-imafp64yrphjgaan-100x100.png",
       "image3": "https://www.uboric.com/wp-content/uploads/2021/01/id2071black-5-id-black-original-imafp65fzgx9gcg5-100x100.png",
       "image4": "https://www.uboric.com/wp-content/uploads/2021/01/id2071black-5-id-black-original-imafp65fz99wzhcs-100x100.png",
-      "cost": 861.68,
+      "cost": 861,
       "slipon": false,
       "laceup": false,
       "count": 1,
@@ -862,7 +862,7 @@
       "image2": "https://www.uboric.com/wp-content/uploads/2020/12/DSC_0394_result-400x265.jpg",
       "image3": "https://www.uboric.com/wp-content/uploads/2020/12/DSC_0395_result-400x265.jpg",
       "image4": "https://www.uboric.com/wp-content/uploads/2020/12/DSC_0396_result-400x265.jpg",
-      "cost": 0,
+      "cost": 500,
       "count": 1,
       "type": "flipflop"
     },
@@ -910,7 +910,7 @@
       "image2": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-69.jpg",
       "image3": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-71.jpg",
       "image4": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-73.jpg",
-      "cost": 116.34,
+      "cost": 116,
       "count": 1,
       "type": "airTight"
     },
@@ -1269,25 +1269,6 @@
   ],
   "cart": [
     {
-      "id": 4,
-      "name": "ADDA MEN’S CHAPPLE / SLIPPERS IN COLOUR ORANG/NAVY",
-      "name1": "ADDA MEN’S CHAPPLE / SLIPPERS IN...",
-      "image1": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0807_result.jpg",
-      "image2": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0808_result.jpg",
-      "image3": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0809_result.jpg",
-      "image4": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0810_result.jpg",
-      "cost": 699,
-      "slipon": false,
-      "count": 3,
-      "size6": true,
-      "size7": true,
-      "size8": true,
-      "size9": false,
-      "size10": true,
-      "size11": false,
-      "type": "casualSlipper"
-    },
-    {
       "id": 1,
       "name": "ADDA MEN'S CHAPPLE / SLIPPERS IN BLUE COLOUR",
       "name1": "ADDA MEN'S CHAPPLE / SLIPPERS IN...",
@@ -1305,83 +1286,7 @@
       "size10": true,
       "size11": false,
       "type": "casualSlipper"
-    },
-    {
-      "id": 51,
-      "name": "Shoptool BPA Free 2 in 1 Storage Container with 2 Grid for Food Cereals Grain Sealed Container",
-      "name1": "Shoptool BPA Free 2 in 1...",
-      "image1": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-72.jpg",
-      "image2": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-69.jpg",
-      "image3": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-71.jpg",
-      "image4": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-73.jpg",
-      "cost": 116.34,
-      "count": 3,
-      "type": "airTight",
-      "payload": {
-        "id": 51,
-        "name": "Shoptool BPA Free 2 in 1 Storage Container with 2 Grid for Food Cereals Grain Sealed Container",
-        "name1": "Shoptool BPA Free 2 in 1...",
-        "image1": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-72.jpg",
-        "image2": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-69.jpg",
-        "image3": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-71.jpg",
-        "image4": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-73.jpg",
-        "cost": 116.34,
-        "count": 2,
-        "type": "airTight",
-        "payload": {
-          "id": 51,
-          "name": "Shoptool BPA Free 2 in 1 Storage Container with 2 Grid for Food Cereals Grain Sealed Container",
-          "name1": "Shoptool BPA Free 2 in 1...",
-          "image1": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-72.jpg",
-          "image2": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-69.jpg",
-          "image3": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-71.jpg",
-          "image4": "https://www.uboric.com/wp-content/uploads/2020/08/shoptool-73.jpg",
-          "cost": 116.34,
-          "count": 2,
-          "type": "airTight"
-        }
-      }
-    },
-    {
-      "id": 50,
-      "name": "Shoptool Woman’s 1st Choice New Grocery Container – 800 ml (Pack of 6, Red)",
-      "name1": "Shoptool Woman’s 1st Choice New Grocery Container...",
-      "image1": "https://www.uboric.com/wp-content/uploads/2020/12/handi-01-shoptool-original-imafw2fyakfmze5m.png",
-      "image2": "https://www.uboric.com/wp-content/uploads/2020/12/handi-800ml-red-cubes-original-imafyghuemkyyfkc.png",
-      "image3": "https://www.uboric.com/wp-content/uploads/2020/12/handi-01-shoptool-original-imafw2fy9cdgguad.png",
-      "image4": "https://www.uboric.com/wp-content/uploads/2020/12/handi-01-shoptool-original-imafw2fyxvsqhgbr.png",
-      "cost": 599,
-      "count": 2,
-      "type": "airTight"
-    },
-    {
-      "id": 15,
-      "name": "P&G MEN’S SANDALS in BROWN",
-      "name1": "P&G MEN’S SANDALS in BROWN",
-      "image1": "https://www.uboric.com/wp-content/uploads/2019/12/16-11057-400x267.jpg",
-      "image2": "https://www.uboric.com/wp-content/uploads/2019/12/16-11058-400x267.jpg",
-      "image3": "https://www.uboric.com/wp-content/uploads/2019/12/16-11059-400x267.jpg",
-      "image4": "https://www.uboric.com/wp-content/uploads/2019/12/16-11060-400x267.jpg",
-      "cost": 1599,
-      "slipon": true,
-      "count": 5,
-      "size6": true,
-      "size7": true,
-      "size8": true,
-      "size9": true,
-      "size10": true,
-      "type": "casualSandal"
-    },
-    {
-      "id": 68,
-      "name": "PACK OF 2 yellow Stainless Steel Regular Gas Lighter for Kitchen Stove",
-      "name1": "PACK OF 2 yellow Stainless Steel Regular Gas Lighter...",
-      "image1": "https://www.uboric.com/wp-content/uploads/2020/09/GL-11-100x100.png",
-      "image2": "https://www.uboric.com/wp-content/uploads/2020/09/41ImeQsFhAL.jpg",
-      "cost": 199,
-      "count": 3,
-      "type": "gaslighter"
     }
+
   ]
-}
 }

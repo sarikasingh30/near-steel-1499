@@ -1,111 +1,105 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Image,
-  Input,
-  Table,
-  Tbody,
-  Td,
-  Text,
-  Th,
-  Thead,
-  Tr,
-} from "@chakra-ui/react";
+import { Button, Flex, Image, Input, Td, Tr } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import {
+  deleteCartItem,
+  getCartData,
+  updateCartData,
+} from "../Redux/AppReducer/action";
 
-const BigScreenCartTable = ({ products }) => {
-  const [itemCount, setItemCount] = useState("");
+const BigScreenCartTable = ({ item }) => {
+  const [itemCount, setItemCount] = useState(item.count);
+  const [loading, setLoading] = useState(false);
+  // console.log(products);
+  const dispatch = useDispatch();
+
+  const increment = (id, val) => {
+    setItemCount(itemCount + val);
+    let count = 1 + itemCount;
+    // console.log(count);
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+      dispatch(updateCartData(id, count));
+      dispatch(getCartData());
+    }, 3000);
+  };
+
+  const decrement = (id, val) => {
+    if (itemCount > 1) {
+      setItemCount(itemCount - val);
+      let count = itemCount - 1;
+      setLoading(true);
+
+      setTimeout(() => {
+        setLoading(false);
+        dispatch(updateCartData(id, count));
+        dispatch(getCartData());
+      }, 3000);
+    }
+  };
+
+  const deleteItem = (id) => {
+    dispatch(deleteCartItem(id)).then(() => dispatch(getCartData()));
+  };
+
   return (
     <>
-      <Table>
-        <Thead>
-          <Tr>
-            <Th></Th>
-            <Th></Th>
-            <Th p="2rem" fontSize="md" textTransform="capitalize">
-              Product
-            </Th>
-            <Th fontSize="md" textTransform="capitalize">
-              Price
-            </Th>
-            <Th fontSize="md" textTransform="capitalize">
-              Quantity
-            </Th>
-            <Th fontSize="md" textTransform="capitalize">
-              Subtotal
-            </Th>
-          </Tr>
-        </Thead>
-        <Tbody>
-          {products?.map((item) => (
-            <Tr key={item.id}>
-              <Td maxW={0.1} p={0}>
-                <Button
-                  size="xs"
-                  borderRadius="50%"
-                  bg="#e2401c"
-                  fontWeight={800}
-                  color="white"
-                  _hover={{ bg: "red" }}
-                >
-                  X
-                </Button>
-              </Td>
-              <Td p={0}>
+      <Tr>
+        <Td maxW={0.1} p={0}>
+          <Button
+            size="xs"
+            borderRadius="50%"
+            bg="#e2401c"
+            fontWeight={800}
+            color="white"
+            _hover={{ bg: "red" }}
+            onClick={() => deleteItem(item.id)}
+          >
+            X
+          </Button>
+        </Td>
+        <Td p={0}>
+          <Image src={item.image1} w="90px" />
+        </Td>
+        <Td>{item.name}</Td>
+        <Td>₹{item.cost}.00</Td>
 
-                <Image src={item.image1} w="90px" />
-              </Td>
-              <Td>{item.name}</Td>
-              <Td>₹{item.cost}.00</Td>
+        <Td>
+          <Flex>
+            <Button
+              bg="none"
+              variant="outline"
+              borderRadius={2}
+              _hover={{ bg: "none" }}
+              onClick={() => decrement(item.id, 1)}
+              isLoading={loading}
+            >
+              -
+            </Button>
+            <Input
+              textAlign="center"
+              w="35px"
+              p={0}
+              value={itemCount}
+              onChange={(e) => setItemCount(e.target.value)}
+            />
+            <Button
+              bg="none"
+              variant="outline"
+              borderRadius={2}
+              _hover={{ bg: "none" }}
+              onClick={() => increment(item.id, 1)}
+              isLoading={loading}
+            >
+              +
+            </Button>
+          </Flex>
+        </Td>
 
-              <Td>
-                <Flex>
-                  <Button
-                    bg="none"
-                    variant="outline"
-                    borderRadius={2}
-                    _hover={{ bg: "none" }}
-                  >
-                    -
-                  </Button>
-                  <Input
-                    textAlign="center"
-                    w="35px"
-                    p={0}
-
-                    defaultValue={item.count}
-
-                    onChange={(e) => setItemCount(e.target.value)}
-                  />
-                  <Button
-                    bg="none"
-                    variant="outline"
-                    borderRadius={2}
-                    _hover={{ bg: "none" }}
-                  >
-                    +
-                  </Button>
-                </Flex>
-              </Td>
-
-              <Td>₹{+item.cost * +item.count}.00</Td>
-
-            </Tr>
-          ))}
-        </Tbody>
-      </Table>
-      <Box textAlign="end" p="0 1rem">
-        <Button
-          bg="#ffce61"
-          border="1px solid"
-          p="1.5rem"
-          mt="0.5rem"
-          borderRadius={4}
-        >
-          UPDATE CART
-        </Button>
-      </Box>
+        <Td>₹{+item.cost * +item.count}.00</Td>
+      </Tr>
     </>
   );
 };
