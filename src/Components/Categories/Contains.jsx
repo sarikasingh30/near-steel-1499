@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Box } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/react';
+import { Link as RouterLink } from "react-router-dom";
 import "./Contains.css";
 import Minibox from './Minibox';
 
@@ -16,7 +17,7 @@ const Contains = ({data}) => {
     }
     const handleEnter=()=>{
       setDisplay("grid");
-      setCost(<Button>SELECT OPTION</Button>)
+      setCost(<Button variant="Ghost">SELECT OPTION</Button>)
     }
     const handleLeave=()=>{
       setDisplay("none");
@@ -24,9 +25,11 @@ const Contains = ({data}) => {
     }
     // console.log(cost);
       return (
-        <div>
+        <div style={{textAlign:"center"}}>
           <Box key={data.id} className="modulebox" minW="220px" maxW="330px" w='100%' margin="auto" boxShadow="0px 1px 10px lightblue" h="320px" borderWidth='1px' borderRadius='lg' overflow='hidden' onMouseEnter={()=>handleEnter()} onMouseLeave={()=>handleLeave()}>
-              <Image src={imgpref} style={{height:"50%",margin:"auto"}} />
+            <RouterLink to={`/${data.type}/${data.id}`} key={data.id}>
+              <Image src={imgpref} style={{height:"50%",width:'100%',margin:"auto"}} />
+            </RouterLink>
               <div style={{height:"20%",marginTop:"-10%",width:"90%",margin:"auto"}}>
                   <div style={{display:`${display}`,gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:"5px"}}>
                       <Minibox mini={data.image1} set={Display} />
@@ -36,7 +39,7 @@ const Contains = ({data}) => {
                   </div>
               </div>
               <h4 onMouseEnter={()=>setLine("underline")} onMouseLeave={()=>setLine("none")} style={{padding:"0px 15px",textDecoration:line}}>{data.name1}</h4>
-              {cost}
+              <div>{cost}</div>
           </Box>
         </div>
       ) 
