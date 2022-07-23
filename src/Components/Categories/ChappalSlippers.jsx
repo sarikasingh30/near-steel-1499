@@ -4,8 +4,7 @@ import Contains from "./Contains";
 import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
-import Navbar from "../Navbar";
-import Footer from "../Footer";
+import {Link as RouterLink} from "react-router-dom"
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
 const ChappalSlippers = () => { 
@@ -29,11 +28,12 @@ const ChappalSlippers = () => {
 
   return (
     <div>
-      <Navbar />
-      <div>
+      <div style={{textAlign:"center"}}>
+
         <h1
           style={{
             fontWeight: "500",
+            
             margin: "20px",
             color: "teal",
             fontSize: "25px",
@@ -41,7 +41,7 @@ const ChappalSlippers = () => {
           }}
         >
           Casual Chapple/Slippers
-        </h1>
+        </h1 >
         <Box mb="6">
           <span
             height="19px"
@@ -70,20 +70,13 @@ const ChappalSlippers = () => {
           {data.map((item) =>{
             if(item.type === "casualSlipper" || item.type === "chappal"){
               return(
-                <Contains key={item.id} data={item} />
+                <RouterLink to={`/${item.type}/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
               )
             } 
             })}
         </div>
-        <div id="filter" style={{ textAlign: "left", padding: "15px" }}>
-          <label style={{ marginTop: "15px", fontWeight: "bold" }}>
-            By Clouser
-          </label>
-          <br />
-          <input  type="checkbox"/> SLIP ON (9)
-        </div>
+        <div id="filter"></div>
       </div>
-      <Footer/>
     </div>
   );
 };

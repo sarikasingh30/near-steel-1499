@@ -4,15 +4,14 @@ import Contains from "./Contains";
 import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
-import {Link as RouterLink} from "react-router-dom"
+
+import { Link as RouterLink } from "react-router-dom";
 import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
 import { useSelector,useDispatch } from "react-redux";
-const CasualPartyShoes = () => { 
+const AirTightContainer = () => { 
 
   const dispatch = useDispatch();
   const data = useSelector(store=>store.AppReducer.products);
-
-
   const dataaction = () => {
     const request = dispatch(getDataRequest());
     axios
@@ -38,7 +37,7 @@ const CasualPartyShoes = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Casual/Party Shoes
+          Air Tight Containers
         </h1>
         <Box mb="6">
           <span
@@ -57,31 +56,33 @@ const CasualPartyShoes = () => {
           <ArrowRightIcon height="6px" />
           <span
             height="19px"
-            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}>
-            Casual/Party Shoes
+            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
+          >
+            Kitchan Ware
+          </span>
+          <ArrowRightIcon height="6px" />
+          <span
+            height="19px"
+            style={{ color: "rgb(30,86,160)", fontSize: "12px" }}
+          >
+            Air Tight Containers
           </span>
         </Box>
       </div>
       <div id="base">
         <div id="grid">
           {data.map((item) =>{
-            if(item.type === "casualShoe"){
+            if(item.type ==="airTight"){
               return(
                 <RouterLink to={`/${item.type}/${item.id}`} key={item.id}><Contains key={item.id} data={item} /></RouterLink>
               )
             } 
             })}
         </div>
-        <div id="filter" style={{ textAlign: "left", padding: "15px" }}>
-          <label style={{ marginTop: "15px", fontWeight: "bold" }}>
-            By Clouser
-          </label>
-          <br />
-          <input  type="checkbox"/> SLIP ON (9)
-        </div>
+        <div id="filter"></div>
       </div>
     </div>
   );
 };
 
-export default CasualPartyShoes;
+export default AirTightContainer;
