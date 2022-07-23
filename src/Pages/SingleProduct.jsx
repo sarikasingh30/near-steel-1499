@@ -29,6 +29,7 @@ import {
   getDataFailure,
   addCartData,
   getCartData,
+  updateCartData,
 } from "../Redux/AppReducer/action";
 import {v4 as uuid} from "uuid"
 const SingleProduct = () => {
@@ -40,21 +41,24 @@ const SingleProduct = () => {
   const [product, setProduct] = useState({});
   // add to cart button functionality
   const addToCart=(x)=>{
-    // let y={...x,_id:uuid()}
-    
-    // dispatch(addCartData(x))
-    let newCartdata=cartdata.filter((item)=>{if(item.id===x.id){
-
-      return {...item,"count":item.count+1}
-    }else{
-      return x
-    }})
-  console.log(newCartdata)
+  const check_index = cartdata.findIndex(item => item.id === x.id);
+  if (check_index !== -1) {
+    cartdata[check_index].count++;
+    dispatch(updateCartData(x.id,cartdata[check_index].count))
+  } else {
+    dispatch(addCartData(x))
+  }
 
 }
 // buy now button functionality
-const buyNow=(product)=>{
-      dispatch(addCartData(product));
+const buyNow=(x)=>{
+  const check_index = cartdata.findIndex(item => item.id === x.id);
+  if (check_index !== -1) {
+    cartdata[check_index].count++;
+    dispatch(updateCartData(x.id,cartdata[check_index].count))
+  } else {
+    dispatch(addCartData(x))
+  }
       navigate("/cart")
 }
   const dataAction = () => {
