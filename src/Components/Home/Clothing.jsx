@@ -5,9 +5,20 @@ import styles from "./style.module.css";
 const Clothing = () => {
   return (
     <div>
-      <SimpleGrid columns={2} spacing={5} width={"96%"} margin="auto">
+      <SimpleGrid
+        columns={{
+          base: 1,
+          sm: 1,
+          md: 2,
+          lg: 2,
+          xl: 2,
+        }}
+        spacing={5}
+        width={"96%"}
+        margin="auto"
+      >
         {/* for now i am giveing route to login just to check update here as per the need:- */}
-        <NavLink to="/login">
+        <NavLink to="/">
           <Box height="57vh">
             <Image
               className={styles.kitchenPop}
@@ -19,7 +30,7 @@ const Clothing = () => {
           </Box>
         </NavLink>
         {/* for now i am giveing route to login just to check update here as per the need:- */}
-        <NavLink to={"/login"}>
+        <NavLink to={"/"}>
           <Box>
             <Image
               className={styles.kitchenPop}

@@ -22,6 +22,7 @@ const Navbar = () => {
   useEffect(()=>{
     dispatch(getCartData())
   },[])
+
   return (
     <div className="navbar" >
       <div className="first_row" >
@@ -49,6 +50,7 @@ const Navbar = () => {
             />
           </div>
           <div className="iconsDiv">
+
           <div className="second">
           <RouterLink to={isAuth === false ? "/login" : "/myaccount"}><MdAccountCircle size="35px" /></RouterLink>
             </div>
@@ -58,6 +60,7 @@ const Navbar = () => {
             
             <div className="CartCount">
               <p>({totalCount})</p>
+
             </div>
           </div>
         </div>
@@ -82,7 +85,9 @@ const Navbar = () => {
 
                           <b><RouterLink to="/product-category/footwear"><p className="wear1">Foot Wear</p></RouterLink></b>
                           <b><RouterLink to="/product-category/Mensfootwear"><p className="wear1">Men's footwear</p></RouterLink></b>
+
                           <RouterLink to="/product-category/casualslippers"><p className="wear1">Casual Chapple/Slippers</p></RouterLink>
+
                           <RouterLink to="/product-category/casual-sandals"><p className="wear1">Casual Sandals</p></RouterLink>
                           <RouterLink to="/product-category/casual-partyshoes"><p className="wear1">Casual/Party Shoes</p></RouterLink>
                           <RouterLink to="/product-category/chappal-slippers"><p className="wear1">Chappal/Slippers</p></RouterLink>

@@ -4,7 +4,17 @@ import { Grid, GridItem, Box, Image } from "@chakra-ui/react";
 const Support = () => {
   return (
     <div>
-      <Grid templateColumns="repeat(1, 1fr)" margin={"80px 50px 0px 50px "}>
+      <Grid
+        templateColumns="repeat(1, 1fr)"
+        margin={{
+          base: "50px 0px",
+          sm: "80px 0px",
+          md: "80px 0px",
+          lg: "80px  0px ",
+          xl: "80px 50px 0px 50px",
+        }}
+        // {{ base: "80px 0px", md: "80px 0px", lg: "80px 50px 0px 50px" }}
+      >
         <Box boxSize="100%">
           <Image
             width={"100%"}

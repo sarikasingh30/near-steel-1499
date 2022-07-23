@@ -115,6 +115,7 @@ cursor: "pointer", */
   margin-left: 450px;
   margin-top:3%;
   color: #1e516c;
+  border: 1px solid red;
 }
 .second:hover {
   color: #ffce61;

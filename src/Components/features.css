@@ -1,71 +1,115 @@
+@media only screen and (min-width:0px) and (max-width:320px) {}
 
+.text {
 
-.text{
-    height: 600px;
-    width: 1140px;
-    padding: 10px 10px 10px 10px;
+    width: 90%;
+    padding: 10px 5px;
     margin: auto;
     background-color: #faf8f8;
-    margin-top:50px;
+    margin-top: 50px;
    
+height: 100%;
 
 }
-.textbig{
-    font-family: Lato,sans-serif;
-    font-size: 30px;
+
+.textbig {
+    font-family: Lato, sans-serif;
+    font-size: 1.875rem;
     font-weight: 600;
     letter-spacing: 5px;
-    line-height:30px;
+    line-height: 30px;
+    width: 100%;
+    height: auto;
     text-decoration: none solid rgb (30 81 108);
     text-align: center;
-    height:60px;
-    width: 1100px;
     color: #1e516c;
-    margin-top:30px;
+    
 }
-.textp{
-    font-family: Lato,sans-serif;
+
+
+@media only screen and (max-width:300px) {
+    .textbig {
+        font-size: 10px;
+
+    }
+}
+
+@media only screen and (min-width:301px) and (max-width:720px) {
+    .textbig {
+        font-size: 20px;
+
+    }
+}
+
+.textp {
+    font-family: Lato, sans-serif;
     line-height: 30px;
-    width: 1120px;
-    margin-top:20px;
+    
+    width: 100%;
 
 }
-.textl{
-    font-family: Lato,sans-serif;
+
+.textl {
+    font-family: Lato, sans-serif;
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 5px;
-    line-height:30px;
+    height: auto;
+    line-height: 30px;
     text-decoration: none solid rgb (30 81 108);
     text-align: center;
-    height:60px;
-    width: 1100px;
+
+    width: 100%;
     color: #1e516c;
-    margin-top:30px;
-   padding-top:10px;
-} 
+    margin-top: 30px;
+    padding-top: 10px;
+    
+}
 
 
-.option{
+@media only screen and (max-width:300px) {
+    .textl {
+        font-size: 12px;
+        
+
+    }
+}
+
+@media only screen and (min-width:301px) and (max-width:720px) {
+    .textl {
+        font-size: 15px;
+
+    }
+}
+
+
+.option {
     display: flex;
+
+
     /* justify-content: space-between; */
-    gap:10px;
-    /* padding: 0 0 0 150px; */
+
+    padding: 0 0 0 0px;
     margin-bottom: 300px;
-   
-    
-    
+
 }
-.option div{
-    font-size: 22px;
+
+
+.option div {
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 150;
 }
-  
-.rigthttik{
+
+
+.rigthttik {
     padding: 0 5px 0 0;
     font-weight: 500;
     font-size: 22px;
     font-stretch: expanded;
     color: #096ba0;
+}
+
+#wrap {
+    flex-wrap: wrap;
 }

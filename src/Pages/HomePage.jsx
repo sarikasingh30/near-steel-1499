@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 import HomeTopSliding from "./HomeTopSliding";
 import Kitchen from "../Components/Home/Kitchen";
 import Support from "../Components/Home/Support";
@@ -27,6 +28,7 @@ const HomePage = () => {
       <FootwearHeading />
       <Footwear />
     </>
+
   );
 };
 

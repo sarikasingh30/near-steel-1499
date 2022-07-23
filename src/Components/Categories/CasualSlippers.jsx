@@ -66,7 +66,7 @@ const CasualSlippers = () => {
           {data.map((item) =>{
             if(item.type === "casualSlipper"){
               return(
-                <Contains key={item.id} data={item} />
+               <Contains key={item.id} data={item} />
               )
             } 
             })}
@@ -84,3 +84,5 @@ const CasualSlippers = () => {
 };
 
 export default CasualSlippers;
+{/* <RouterLink to={`/${item.type}/${item.id}`} key={item.id}> */}
+// </RouterLink>
