@@ -18,7 +18,12 @@ const Other = () => {
       <Grid templateColumns="repeat(1, 1fr)" margin={"40px 0"}>
         <HStack spacing="55px" justifyContent={"center"}>
           <Image src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-pkx8tu1r8n97qduq2ja9rlt0l2lgx8yc1tsaz101ow.png" />
-          <Heading color={"#1e516c"} fontWeight={"400"}>
+          <Heading
+            color={"#1e516c"}
+            fontWeight={"400"}
+            textAlign="center"
+            fontFamily="Lato"
+          >
             OTHER <br /> CATEGORIES
           </Heading>
           <Box>
@@ -27,7 +32,18 @@ const Other = () => {
         </HStack>
       </Grid>
 
-      <SimpleGrid columns={2} spacing={5} width={"96%"} margin="auto">
+      <SimpleGrid
+        columns={{
+          base: 1,
+          sm: 1,
+          md: 2,
+          lg: 2,
+          xl: 2,
+        }}
+        spacing={5}
+        width={"96%"}
+        margin="auto"
+      >
         {/* for now i am giveing route to login just to check update here as per the need:- */}
         <NavLink to="/login">
           <Box height="57vh">
