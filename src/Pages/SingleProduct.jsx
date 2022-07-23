@@ -14,7 +14,9 @@ import {
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+
+import { useParams,useNavigate } from "react-router-dom";
+
 import { ArrowRightIcon, InfoOutlineIcon } from "@chakra-ui/icons";
 import {
   FaHeadphones,
@@ -27,13 +29,42 @@ import {
   getDataRequest,
   getDataSuccess,
   getDataFailure,
-} from "../Redux/AppReducer/action";
 
+  addCartData,
+  getCartData,
+  updateCartData,
+} from "../Redux/AppReducer/action";
+import {v4 as uuid} from "uuid"
 const SingleProduct = () => {
   const data = useSelector((store) => store.AppReducer.products);
+  const cartdata = useSelector((store) => store.AppReducer.cart);
+  const navigate=useNavigate()
   const dispatch = useDispatch();
-  const { path, id } = useParams();
+  const {id}= useParams();
   const [product, setProduct] = useState({});
+  // add to cart button functionality
+  const addToCart=(x)=>{
+  const check_index = cartdata.findIndex(item => item.id === x.id);
+  if (check_index !== -1) {
+    cartdata[check_index].count++;
+    dispatch(updateCartData(x.id,cartdata[check_index].count))
+  } else {
+    dispatch(addCartData(x))
+  }
+
+}
+// buy now button functionality
+const buyNow=(x)=>{
+  const check_index = cartdata.findIndex(item => item.id === x.id);
+  if (check_index !== -1) {
+    cartdata[check_index].count++;
+    dispatch(updateCartData(x.id,cartdata[check_index].count))
+  } else {
+    dispatch(addCartData(x))
+  }
+      navigate("/cart")
+}
+
   const dataAction = () => {
     const request = dispatch(getDataRequest());
     axios
@@ -42,21 +73,18 @@ const SingleProduct = () => {
       .catch((e) => dispatch(getDataFailure()));
   };
 
+  
   useEffect(() => {
     dataAction();
+    if(cartdata.length==0){dispatch(getCartData())}
   }, []);
-
   useEffect(() => {
-    if (path&&id) {
-      const temp = data.find((item) => {
-        if (item.type ==path && item.id===Number(id)) {
-          return item;
-        }
-      });
-      temp && setProduct(temp);
+    if(id){
+      const temp=data.find((item)=>item.id===Number(id))
+       temp && setProduct(temp)
     }
-  }, [data, path, id,setProduct]);
-console.log(product)
+  }, [id,data]);
+
   return (
     <Box>
       <Box
@@ -98,30 +126,25 @@ console.log(product)
               height="19px"
               style={{ color: "rgb(30,86,160)", fontSize: "16px" }}
             >
-              Casual Chapple/Slippers
-            </span>
-            <ArrowRightIcon height="6px" />
-            <span
-              height="19px"
-              style={{ color: "rgb(30,86,160)", fontSize: "16px" }}
-            >
               {product.name}
             </span>
           </Box>
         </Flex>
       </Box>
       <Flex
-        direction={{ xl: "row", lg: "row", md: "column", sm: "column" }}
+
+        direction={{base:"column", xl: "row", lg: "row", md: "column", sm: "column" }}
         mt="5%"
       >
-        <Box width={{ md: "99%", xl: "45%", lg: "45%", sm: "99%" }}>
+        <Box width={{ md: "99%", xl: "45%", lg: "45%", sm: "99%", base:"99%"}}>
           <Flex direction="column">
             <Image
-              src={product.image1}
+              src={product.image2}
               width="90%"
               ml="4%"
               height="350px"
-              _hover={{ ml: "10%" }}
+              // _hover={{ ml: "10%" }}
+
             />
             <Flex direction="row" mt="2%">
               <Image
@@ -155,7 +178,9 @@ console.log(product)
             </Flex>
           </Flex>
         </Box>
-        <Box width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%" }}>
+
+        <Box width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%" ,base:"99%" }}>
+
           <Flex direction="column">
             <Heading
               style={{
@@ -179,6 +204,7 @@ console.log(product)
               ml="40%"
             />
 
+
             <Flex direction="row" ml="5" mt="4" justifyContent="space-around">
               <VStack>
                 <FaMoneyBillAlt size="40" />
@@ -201,6 +227,7 @@ console.log(product)
               <Text textAlign="start" fontWeight="600">
                 Size:
               </Text>
+              
 
               <Select
                 variant="outline"
@@ -226,6 +253,9 @@ console.log(product)
                 height="50px"
                 mt="3"
                 borderRadius="4"
+
+                onClick={()=>buyNow(product)}
+
               >
                 BUY NOW
               </Button>
@@ -246,6 +276,9 @@ console.log(product)
                 mt="3"
                 ml="2"
                 borderRadius="4"
+
+                onClick={()=>addToCart(product)}
+
               >
                 ADD TO CART
               </Button>

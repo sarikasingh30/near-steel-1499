@@ -5,6 +5,7 @@ import { Button } from '@chakra-ui/react';
 import { Link as RouterLink } from "react-router-dom";
 import "./Contains.css";
 import Minibox from './Minibox';
+import { Link as RouterLink } from "react-router-dom";
 
 
 const Contains = ({data}) => {
@@ -17,7 +18,9 @@ const Contains = ({data}) => {
     }
     const handleEnter=()=>{
       setDisplay("grid");
+
       setCost(<Button variant="Ghost">SELECT OPTION</Button>)
+
     }
     const handleLeave=()=>{
       setDisplay("none");
@@ -27,9 +30,9 @@ const Contains = ({data}) => {
       return (
         <div style={{textAlign:"center"}}>
           <Box key={data.id} className="modulebox" minW="220px" maxW="330px" w='100%' margin="auto" boxShadow="0px 1px 10px lightblue" h="320px" borderWidth='1px' borderRadius='lg' overflow='hidden' onMouseEnter={()=>handleEnter()} onMouseLeave={()=>handleLeave()}>
-            <RouterLink to={`/${data.type}/${data.id}`} key={data.id}>
-              <Image src={imgpref} style={{height:"50%",width:'100%',margin:"auto"}} />
-            </RouterLink>
+
+          <RouterLink to={`/product-category/${data.id}`}><Image src={imgpref} style={{height:"50%",margin:"auto"}} /></RouterLink>
+
               <div style={{height:"20%",marginTop:"-10%",width:"90%",margin:"auto"}}>
                   <div style={{display:`${display}`,gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:"5px"}}>
                       <Minibox mini={data.image1} set={Display} />
@@ -38,7 +41,9 @@ const Contains = ({data}) => {
                       <Minibox mini={data.image4} set={Display} />
                   </div>
               </div>
-              <h4 onMouseEnter={()=>setLine("underline")} onMouseLeave={()=>setLine("none")} style={{padding:"0px 15px",textDecoration:line}}>{data.name1}</h4>
+
+              <RouterLink to={`/product-category/${data.id}`}><h4 onMouseEnter={()=>setLine("underline")} onMouseLeave={()=>setLine("none")} style={{padding:"0px 15px",textDecoration:line}}>{data.name1}</h4></RouterLink>
+
               <div>{cost}</div>
           </Box>
         </div>
