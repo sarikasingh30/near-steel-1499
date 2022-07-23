@@ -21,6 +21,9 @@ import MyAccount from "./MyAccount";
 import SingleProduct from './SingleProduct'
 import NotFound from "./NotFound";
 
+// import { Checkout } from "./CheckOut";
+
+
 const MainRoutes = () => {
   return (
     <>
@@ -44,8 +47,7 @@ const MainRoutes = () => {
           <Route path="/product-category/:id" element={<SingleProduct/>}/>
         <Route path="/cart" element={<Cart/>} />
         <Route path="/*" element={<NotFound/>}/>
-
-        {/* <Route path="/casual-slippers/:id" element={<SingleProduct/>}/> */}
+      
       </Routes>
       {/* <Footer /> */}
 
