@@ -1,11 +1,14 @@
 import { Box, Button, Container, Flex, Heading, Text } from "@chakra-ui/react";
+
 import React, { useEffect } from "react";
+
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { Link as RouterLink } from "react-router-dom";
 import BigScreenCartTable from "../Components/BigScreenCartTable";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import SmallScreenCartTable from "../Components/SmallScreenCartTable";
 import styles from "./Cart.module.css";
+
 import { getCartData } from "../Redux/AppReducer/action";
 import { useSelector,useDispatch } from "react-redux";
 
@@ -53,6 +56,7 @@ const Cart = () => {
 
   const totlaPrice = cart
     ?.map((item) => item.cost * item.count)
+
     .reduce((prev, curr) => prev + curr, 0);
 
   return (
@@ -63,7 +67,9 @@ const Cart = () => {
           mb="0.4rem"
           letterSpacing="2px"
           fontWeight={500}
+
           textAlign="center"
+
         >
           Cart
         </Heading>
@@ -107,7 +113,9 @@ const Cart = () => {
             xl: "inline-block",
           }}
         >
+
           <BigScreenCartTable products={cart} />
+
         </Box>
 
         {/* cart box */}
@@ -157,7 +165,9 @@ const Cart = () => {
           xl: "none",
         }}
       >
+
         <SmallScreenCartTable products={cart} />
+
         <Box
           bg="#fafafa"
           w={{ md: "100%", lg: "30%", xl: "30%" }}

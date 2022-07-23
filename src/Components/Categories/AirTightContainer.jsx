@@ -74,7 +74,9 @@ const AirTightContainer = () => {
           {data.map((item) =>{
             if(item.type ==="airTight"){
               return(
+
                 <Contains key={item.id} data={item} />
+
               )
             } 
             })}

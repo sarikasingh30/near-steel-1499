@@ -14,7 +14,9 @@ import {
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
+
 import { useParams,useNavigate } from "react-router-dom";
+
 import { ArrowRightIcon, InfoOutlineIcon } from "@chakra-ui/icons";
 import {
   FaHeadphones,
@@ -27,6 +29,7 @@ import {
   getDataRequest,
   getDataSuccess,
   getDataFailure,
+
   addCartData,
   getCartData,
   updateCartData,
@@ -61,6 +64,7 @@ const buyNow=(x)=>{
   }
       navigate("/cart")
 }
+
   const dataAction = () => {
     const request = dispatch(getDataRequest());
     axios
@@ -68,6 +72,7 @@ const buyNow=(x)=>{
       .then((r) => dispatch(getDataSuccess(r.data)))
       .catch((e) => dispatch(getDataFailure()));
   };
+
   
   useEffect(() => {
     dataAction();
@@ -79,6 +84,7 @@ const buyNow=(x)=>{
        temp && setProduct(temp)
     }
   }, [id,data]);
+
   return (
     <Box>
       <Box
@@ -126,6 +132,7 @@ const buyNow=(x)=>{
         </Flex>
       </Box>
       <Flex
+
         direction={{base:"column", xl: "row", lg: "row", md: "column", sm: "column" }}
         mt="5%"
       >
@@ -137,6 +144,7 @@ const buyNow=(x)=>{
               ml="4%"
               height="350px"
               // _hover={{ ml: "10%" }}
+
             />
             <Flex direction="row" mt="2%">
               <Image
@@ -170,7 +178,9 @@ const buyNow=(x)=>{
             </Flex>
           </Flex>
         </Box>
+
         <Box width={{ md: "55%", xl: "55%", lg: "55%", sm: "99%" ,base:"99%" }}>
+
           <Flex direction="column">
             <Heading
               style={{
@@ -193,6 +203,7 @@ const buyNow=(x)=>{
               height="120px"
               ml="40%"
             />
+
 
             <Flex direction="row" ml="5" mt="4" justifyContent="space-around">
               <VStack>
@@ -217,6 +228,7 @@ const buyNow=(x)=>{
                 Size:
               </Text>
               
+
               <Select
                 variant="outline"
                 placeholder="Choose an option"
@@ -241,7 +253,9 @@ const buyNow=(x)=>{
                 height="50px"
                 mt="3"
                 borderRadius="4"
+
                 onClick={()=>buyNow(product)}
+
               >
                 BUY NOW
               </Button>
@@ -262,7 +276,9 @@ const buyNow=(x)=>{
                 mt="3"
                 ml="2"
                 borderRadius="4"
+
                 onClick={()=>addToCart(product)}
+
               >
                 ADD TO CART
               </Button>

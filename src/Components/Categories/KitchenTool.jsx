@@ -76,7 +76,9 @@ const KitchenTool = () => {
           {data.map((item) =>{
             if(item.type === "Kitchentool"){
               return(
+
                 <Contains key={item.id} data={item} />
+
               )
             } 
             })}

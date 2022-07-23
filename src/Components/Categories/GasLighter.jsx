@@ -76,7 +76,9 @@ const GasLighter = () => {
           {data.map((item) =>{
             if(item.type === "gaslighter"){
               return(
+
                 <Contains key={item.id} data={item} />
+
               )
             } 
             })}

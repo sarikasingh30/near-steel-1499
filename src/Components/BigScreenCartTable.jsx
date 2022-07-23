@@ -53,10 +53,12 @@ const BigScreenCartTable = ({ products }) => {
                 </Button>
               </Td>
               <Td p={0}>
+
                 <Image src={item.image1} w="90px" />
               </Td>
               <Td>{item.name}</Td>
               <Td>₹{item.cost}.00</Td>
+
               <Td>
                 <Flex>
                   <Button
@@ -71,7 +73,9 @@ const BigScreenCartTable = ({ products }) => {
                     textAlign="center"
                     w="35px"
                     p={0}
+
                     defaultValue={item.count}
+
                     onChange={(e) => setItemCount(e.target.value)}
                   />
                   <Button
@@ -84,7 +88,9 @@ const BigScreenCartTable = ({ products }) => {
                   </Button>
                 </Flex>
               </Td>
+
               <Td>₹{+item.cost * +item.count}.00</Td>
+
             </Tr>
           ))}
         </Tbody>
