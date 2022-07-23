@@ -11,8 +11,8 @@ import Features from './Features';
 const Footer = () => {
   return (
    <>
- <Features/>
-    <div className="reviewContainer">
+        <Features/>
+     <div className="reviewContainer">
       <h1 className="reviewHeading">What Our Customer Says</h1>
       <div className="carousel">
           <div className="reviewCard">
@@ -27,28 +27,26 @@ const Footer = () => {
           <img src="https://www.uboric.com/wp-content/uploads/2020/07/star.png" alt="" />
             
           </div>
-
           <div className="reviewCard">
           <p>"Best Place for Buying lots of Products at one place specially Purchased  Shoes here"</p>
           <p> "Adesh Patel"</p>
           <img src="https://www.uboric.com/wp-content/uploads/2020/07/star.png" alt="" />  
           </div>  
-
       </div>
       <button className='btn'>Add Your Review</button>
-    </div>
+    </div> 
     <div className='Footer'>
-        <div>
+        <div className='img1'>
         <img className='footerimg' src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" alt="" />
         </div>
         <div className='footertext'>
-            <p>About Us</p>
-            <p>Contact</p>
-            <p>Shipping & Returns</p>
-            <p>My Account</p>
-            <p>Privacy Policy</p>
-            <p>Become A seller</p>
-            <p>Terms & Condition</p>
+          <div> <p>About Us</p></div> 
+           <div> <p>Contact</p></div>
+           <div> <p>Shipping & Returns</p></div>
+          <div>   <p>My Account</p></div>
+          <div>  <p>Privacy Policy</p></div>
+           <div> <p>Become A seller</p></div>
+           <div> <p>Terms & Condition</p></div>
             
         </div>
         <div className='reserved'>
