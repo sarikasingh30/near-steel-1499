@@ -12,7 +12,7 @@ import axios from "axios";
 export const regiterUser = (payload) => (dispatch) => {
   dispatch({ type: REGISTER_USER_REQUEST });
   return axios
-    .post(`http://localhost:5000/users`, payload)
+    .post(`https://near1499server.herokuapp.com/users`, payload)
     .then((r) => dispatch({ type: REGISTER_USER_SUCCESS, payload: r }))
     .catch((err) => dispatch({ type: REGISTER_USER_ERROR, payload: err }));
 };
@@ -20,7 +20,7 @@ export const regiterUser = (payload) => (dispatch) => {
 export const checkUser = () => (dispatch) => {
   dispatch({ type: CHECK_REGISTER_USER_REQUEST });
   return axios
-    .get(`http://localhost:5000/users`)
+    .get(`https://near1499server.herokuapp.com/users`)
     .then((r) =>
       dispatch({ type: CHECK_REGISTER_USER_SUCCESS, payload: r.data })
     )

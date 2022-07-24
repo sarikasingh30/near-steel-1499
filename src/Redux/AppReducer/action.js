@@ -14,7 +14,7 @@ export const getDataFailure = () => ({
 export const getCartData = () => (dispatch) => {
   dispatch({ type: types.GET_CARTDATA_REQUEST });
   axios
-    .get("http://localhost:8080/cart")
+    .get("https://near1499server.herokuapp.com/cart")
     .then((r) =>
       dispatch({ type: types.GET_CARTDATA_SUCCESS, payload: r.data })
     )
@@ -26,7 +26,7 @@ export const getCartData = () => (dispatch) => {
 export const addCartData = (payload) => (dispatch) => {
   dispatch({ type: types.ADD_CARTDATA_REQUEST });
   axios
-    .post("http://localhost:8080/cart", payload)
+    .post("https://near1499server.herokuapp.com/cart", payload)
     .then((r) =>
       dispatch({ type: types.ADD_CARTDATA_SUCCESS, payload: r.data })
     )
@@ -38,7 +38,9 @@ export const addCartData = (payload) => (dispatch) => {
 export const updateCartData = (id, newCount) => (dispatch) => {
   dispatch({ type: types.UPDATE_CARTDATA_REQUEST });
   axios
-    .patch(`http://localhost:8080/cart/${id}`, { count: newCount })
+    .patch(`https://near1499server.herokuapp.com/cart/${id}`, {
+      count: newCount,
+    })
     .then((r) =>
       dispatch({ type: types.UPDATE_CARTDATA_SUCCESS, payload: r.data })
     )
@@ -50,7 +52,7 @@ export const updateCartData = (id, newCount) => (dispatch) => {
 export const deleteCartItem = (id) => (dispatch) => {
   dispatch({ type: types.DELETE_CARTITEM_REQUEST });
   return axios
-    .delete(`http://localhost:8080/cart/${id}`)
+    .delete(`https://near1499server.herokuapp.com/cart/${id}`)
     .then((r) =>
       dispatch({ type: types.DELETE_CARTITEM_SUCCESS, payload: r.data })
     )

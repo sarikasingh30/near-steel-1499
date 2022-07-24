@@ -75,7 +75,7 @@ const SingleProduct = () => {
   const dataAction = () => {
     const request = dispatch(getDataRequest());
     axios
-      .get("http://localhost:8080/Categories")
+      .get("https://near1499server.herokuapp.com/categories")
       .then((r) => dispatch(getDataSuccess(r.data)))
       .catch((e) => dispatch(getDataFailure()));
   };

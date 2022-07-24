@@ -1,7 +1,6 @@
 .navbar {
-  width:100%;
+  width: 100%;
   margin-bottom: 10px;
-
 }
 
 .first_row {
@@ -15,62 +14,57 @@
 }
 .second_row {
   width: 100%;
-  
+
   height: 130px;
-  margin-top:2%;
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
 }
-.search_box{
-
-  width:40%
+.search_box {
+  width: 40%;
 }
-.second_box_main{
-
-  width:59%;
-  display:flex;
+.second_box_main {
+  width: 59%;
+  display: flex;
   flex-direction: row;
 
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .logo_image {
   height: 80px;
-  width:80%;
+  width: 80%;
   margin-left: 10px;
-  margin-top:2%;
+  margin-top: 2%;
 }
 .box {
-
-  width:90%;
+  width: 90%;
   display: flex;
   background-color: black;
   color: white;
-  height:50px;
+  height: 50px;
   border-radius: 2px;
-  margin-top:2%;
+  margin-top: 2%;
   text-align: center;
 }
 @media (max-width: 1000px) {
   .second_row {
     flex-direction: column;
-    height:150px;
+    height: 150px;
   }
-  .search_box{
+  .search_box {
     /* border:1px solid red; */
-    width:99%;
-    padding-left:0.5rem;
+    width: 99%;
+    padding-left: 0.5rem;
   }
   .box {
     /* border: 4px solid green; */
-    width:95%;
+    width: 95%;
   }
-  .second_box_main{
-    width:99%;
-    margin-top:2%;
-    
+  .second_box_main {
+    width: 99%;
+    margin-top: 2%;
   }
 }
-
 
 /* border: "1px solid black";
 padding: "5px";
@@ -78,29 +72,28 @@ backgroundColor: "rgb(66,66,66)",
 color: "white",
 cursor: "pointer", */
 .iconsDiv {
-    width:30%;
-    margin-right: 10px;
+  width: 30%;
+  margin-right: 10px;
   display: flex;
   justify-content: flex-end;
 }
-.CartCount{
-    margin-top: 8%;
+.CartCount {
+  margin-top: 0;
 }
-.CartCount>p{
-    font-size:25px;
-    padding: 5px;
+.CartCount > p {
+  font-size: 25px;
+  padding: 5px;
 }
 
 @media (max-width: 1000px) {
   .second_row {
     flex-direction: column;
   }
- 
-  
-.logo_image {
-  height:60px;
-  width:80%;
-}
+
+  .logo_image {
+    height: 60px;
+    width: 80%;
+  }
 }
 .orig {
   background-image: radial-gradient(ellipse at center, #fff, #fff);
@@ -113,16 +106,15 @@ cursor: "pointer", */
 }
 .second {
   margin-left: 450px;
-  margin-top:3%;
+  margin-top: 3%;
   color: #1e516c;
-  border: 1px solid red;
 }
 .second:hover {
   color: #ffce61;
 }
 .third {
   margin-left: 30px;
-  margin-top:3%;
+  margin-top: 3%;
   /* border:1px solid blue; */
   color: #1e516c;
 }
@@ -132,19 +124,18 @@ cursor: "pointer", */
 .bar {
   width: 100%;
   margin: auto;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top:15px;
+  margin-top: 15px;
   /* border:1px solid blue; */
   align-items: center;
-  gap:0.1rem;
+  gap: 0.1rem;
 }
 @media (max-width: 800px) {
   .bar {
     flex-direction: column;
   }
-
 }
 .bar :div {
   font-family: sans-serif;
@@ -158,21 +149,20 @@ cursor: "pointer", */
   /* border:1px solid blue; */
   margin-left: 10px;
   text-decoration-line: none;
-    color: black;
+  color: black;
   font-weight: 700;
   margin-bottom: 10px;
-  padding:0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 @media (max-width: 800px) {
   .bar1 {
-    margin-bottom:1px;
+    margin-bottom: 1px;
   }
 }
 .bar1:hover {
   background-color: black;
   color: white;
   /* height: 40px; */
- 
 }
 .drop_down {
   text-align: center;
@@ -200,9 +190,8 @@ cursor: "pointer", */
   text-align: left;
   z-index: 1;
   border-top: none;
-  border:1px solid red;
-  width:900px;
-  height:250px;
+  width: 900px;
+  height: 250px;
   /* line-height:18px; */
 
   white-space: nowrap;
@@ -282,4 +271,3 @@ cursor: "pointer", */
   margin: auto;
   align-items: center;
 }
-

@@ -4,31 +4,32 @@ import Contains from "./Contains";
 import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
-import {Link as RouterLink} from "react-router-dom"
-import {getDataRequest,getDataSuccess,getDataFailure} from "../../Redux/AppReducer/action"
-import { useSelector,useDispatch } from "react-redux";
-const GasLighter = () => { 
-
+import { Link as RouterLink } from "react-router-dom";
+import {
+  getDataRequest,
+  getDataSuccess,
+  getDataFailure,
+} from "../../Redux/AppReducer/action";
+import { useSelector, useDispatch } from "react-redux";
+const GasLighter = () => {
   const dispatch = useDispatch();
-  const data = useSelector(store=>store.AppReducer.products);
-
+  const data = useSelector((store) => store.AppReducer.products);
 
   const dataaction = () => {
     const request = dispatch(getDataRequest());
     axios
-    .get('http://localhost:8080/Categories')
-    .then(r=>dispatch(getDataSuccess(r.data)))
-    .catch(e=>dispatch(getDataFailure()));
+      .get("https://near1499server.herokuapp.com/categories")
+      .then((r) => dispatch(getDataSuccess(r.data)))
+      .catch((e) => dispatch(getDataFailure()));
   };
 
   useEffect(() => {
     dataaction();
   }, []);
 
-
   return (
     <div>
-      <div style={{textAlign:"center"}}>
+      <div style={{ textAlign: "center" }}>
         <h1
           style={{
             fontWeight: "500",
@@ -54,7 +55,7 @@ const GasLighter = () => {
           >
             Products
           </span>
-          
+
           <ArrowRightIcon height="6px" />
           <span
             height="19px"
@@ -73,15 +74,11 @@ const GasLighter = () => {
       </div>
       <div id="base">
         <div id="grid">
-          {data.map((item) =>{
-            if(item.type === "gaslighter"){
-              return(
-
-                <Contains key={item.id} data={item} />
-
-              )
-            } 
-            })}
+          {data.map((item) => {
+            if (item.type === "gaslighter") {
+              return <Contains key={item.id} data={item} />;
+            }
+          })}
         </div>
         <div id="filter"></div>
       </div>

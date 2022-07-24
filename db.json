@@ -1269,17 +1269,17 @@
   ],
   "cart": [
     {
-      "id": 1,
-      "name": "ADDA MEN'S CHAPPLE / SLIPPERS IN BLUE COLOUR",
-      "name1": "ADDA MEN'S CHAPPLE / SLIPPERS IN...",
-      "image1": "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0572_result.jpg",
-      "image2": "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0575_result.jpg",
-      "image3": "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0573_result.jpg",
-      "image4": "https://www.uboric.com/wp-content/uploads/2021/01/DSC_0574_result.jpg",
+      "id": 2,
+      "name": "ADDA MEN’S CHAPPLE / SLIPPERS IN COLOUR BLACK",
+      "name1": "ADDA MEN’S CHAPPLE / SLIPPERS IN...",
+      "image1": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0831_result-400x265.jpg",
+      "image2": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0832_result-100x100.jpg",
+      "image3": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0833_result-100x100.jpg",
+      "image4": "https://www.uboric.com/wp-content/uploads/2021/02/DSC_0834_result-100x100.jpg",
       "cost": 675,
-      "slipon": false,
-      "count": 3,
-      "size6": true,
+      "slipon": true,
+      "count": 2,
+      "size6": false,
       "size7": true,
       "size8": true,
       "size9": true,
@@ -1287,6 +1287,5 @@
       "size11": false,
       "type": "casualSlipper"
     }
-
   ]
 }
