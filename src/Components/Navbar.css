@@ -190,8 +190,10 @@ cursor: "pointer", */
   text-align: left;
   z-index: 1;
   border-top: none;
-  width: 900px;
-  height: 250px;
+
+  /* border:1px solid red; */
+  width:900px;
+  height:250px;
   /* line-height:18px; */
 
   white-space: nowrap;
