@@ -59,6 +59,6 @@
       <img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="https://www.linkedin.com/in/buvaneswaran-s-b63844228/" />
     </a>
 
-### Do 🌟 our repositroy if you find it insightful
+### Do 🌟 our repository if you find it insightful
 
 
