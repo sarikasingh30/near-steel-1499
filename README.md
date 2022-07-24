@@ -27,6 +27,9 @@
 ![Screenshot (81)](https://user-images.githubusercontent.com/101583918/180636205-c6cbdd82-6941-4ab2-a85a-4a0e53eba894.png)
 ### Become a seller
 ![Screenshot (85)](https://user-images.githubusercontent.com/101583918/180636353-e8aa3f51-6b28-4aeb-a41c-46aee27b465e.png)
+### Order Placed
+![Screenshot (242)](https://user-images.githubusercontent.com/97461783/180638569-95dae57d-99a0-4b3e-89e5-b06000db279b.png)
+
 
 ## Tech Stack We Have Used
 <code><img height="50" src="https://raw.githubusercontent.com/sachinverma53121/sachinverma53121/master/icons/react.png"></code>
