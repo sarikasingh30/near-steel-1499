@@ -6,7 +6,7 @@
   - Dedicated product category pages
   - Dedicated product details page
   - Cart Functionality
-  - Addong or removing or increase or decrease the quantity off product
+  - Adding or removing or increase or decrease the quantity off product
   - Proper aunthentication of Login and Signup
   - Protected routes
 ## Here are some of the Glimpses of our website..
