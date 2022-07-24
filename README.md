@@ -2,12 +2,12 @@
 ## Uboric is an E-commerce website for all your daily needs.
 ## This is a Team Project who build these features.
   - Navbar to navigate to other pages
-  - Proper promotion of porducts on landing page
+  - Proper promotion of products on landing page
   - Dedicated product category pages
   - Dedicated product details page
   - Cart Functionality
   - Adding or removing or increase or decrease the quantity off product
-  - Proper aunthentication of Login and Signup
+  - Proper authentication provided to Login and Signup
   - Protected routes
 ## Here are some of the Glimpses of our website..
 ### Navbar & landing page
