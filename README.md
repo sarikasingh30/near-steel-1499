@@ -35,6 +35,8 @@
 <code><img height="50" src="https://raw.githubusercontent.com/sachinverma53121/sachinverma53121/master/icons/heroku.png"></code>
 <code><img height="50" width="50" src="https://img.shields.io/badge/-3bc7bd?logo=chakraui&logoColor=white"></code>
 <code><img height="50" src="https://raw.githubusercontent.com/sachinverma53121/sachinverma53121/master/icons/npm.png"></code>
+<code><img height="50" src="https://raw.githubusercontent.com/sachinverma53121/sachinverma53121/master/icons/html5.png"></code>
+<code><img height="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"></code>
 
 ## Our Loving Team MEMBERS
 - Sarika Singh (Team Leader)  <a href="https://www.linkedin.com/in/sarika30singh/">
