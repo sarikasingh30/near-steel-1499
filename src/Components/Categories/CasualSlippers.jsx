@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import axios from "axios";
 import Contains from "./Contains";
 import "./Contains.css";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import { Box } from "@chakra-ui/react";
-import { Link as RouterLink } from "react-router-dom";
 import {
   getDataRequest,
   getDataSuccess,
@@ -71,6 +70,15 @@ const CasualSlippers = () => {
             }
           })}
         </div>
+
+        <div id="filter" style={{ textAlign: "left", padding: "15px" }}>
+          <label style={{ marginTop: "15px", fontWeight: "bold" }}>
+           
+          </label>
+          <br />
+          
+        </div>
+
       </div>
     </div>
   );
